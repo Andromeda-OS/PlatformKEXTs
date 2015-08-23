@@ -40,6 +40,13 @@
 			remoteGlobalIDString = 1F37E27E18592E42001B9501;
 			remoteInfo = ctfmerge;
 		};
+		1FA934781B897A2500BD68E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +55,7 @@
 		1FA9346E1B89798100BD68E3 /* IOACPIFamily.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOACPIFamily.hpp; sourceTree = "<group>"; };
 		1FA934701B89798100BD68E3 /* IOACPIFamily.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOACPIFamily.cpp; sourceTree = "<group>"; };
 		1FA934721B89798100BD68E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "cross-build.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +98,20 @@
 			path = IOACPIFamily;
 			sourceTree = "<group>";
 		};
+		1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */,
+			);
+			name = "Xcode Supporting Files";
+			path = xcodesupport;
+			sourceTree = "<group>";
+		};
 		1FEF42081B89779C00A5493E = {
 			isa = PBXGroup;
 			children = (
 				1FA9346D1B89798100BD68E3 /* IOACPIFamily */,
+				1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */,
 				1FA934471B89790200BD68E3 /* References */,
 				1FEF42161B89782000A5493E /* Products */,
 			);
@@ -133,6 +151,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1FA934791B897A2500BD68E3 /* PBXTargetDependency */,
 			);
 			name = IOACPIFamily;
 			productName = IOACPIFamily;
@@ -227,6 +246,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FA934791B897A2500BD68E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1FA934781B897A2500BD68E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1FA934741B89798100BD68E3 /* Debug */ = {
@@ -324,12 +351,14 @@
 		};
 		1FEF420D1B89779C00A5493E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */;
 			buildSettings = {
 			};
 			name = Debug;
 		};
 		1FEF420E1B89779C00A5493E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */;
 			buildSettings = {
 			};
 			name = Release;

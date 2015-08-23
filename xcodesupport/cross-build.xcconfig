@@ -1,0 +1,9 @@
+//
+//  cross-build.xcconfig
+//  PlatformKEXTs
+//
+//  Created by William Kent on 8/22/15.
+//  Copyright © 2015 William Kent. All rights reserved.
+//
+
+OTHER_CFLAGS = -nostdinc -isysroot "$(PROJECT_TEMP_ROOT)/xnu"
