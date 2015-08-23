@@ -1,0 +1,77 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXGroup section */
+		1FEF42081B89779C00A5493E = {
+			isa = PBXGroup;
+			children = (
+				1FEF42161B89782000A5493E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FEF42161B89782000A5493E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		1FEF42091B89779C00A5493E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "William Kent";
+			};
+			buildConfigurationList = 1FEF420C1B89779C00A5493E /* Build configuration list for PBXProject "PlatformKEXTs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1FEF42081B89779C00A5493E;
+			productRefGroup = 1FEF42161B89782000A5493E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		1FEF420D1B89779C00A5493E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		1FEF420E1B89779C00A5493E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FEF420C1B89779C00A5493E /* Build configuration list for PBXProject "PlatformKEXTs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FEF420D1B89779C00A5493E /* Debug */,
+				1FEF420E1B89779C00A5493E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FEF42091B89779C00A5493E /* Project object */;
+}
