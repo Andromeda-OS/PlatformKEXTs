@@ -6,4 +6,5 @@
 //  Copyright © 2015 William Kent. All rights reserved.
 //
 
+ADDITIONAL_SDKS = "$(PROJECT_TEMP_ROOT)/xnu"
 OTHER_CFLAGS = -nostdinc -isysroot "$(PROJECT_TEMP_ROOT)/xnu"
