@@ -319,6 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOACPIFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wno-deprecated-register";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -363,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOACPIFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wno-deprecated-register";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
