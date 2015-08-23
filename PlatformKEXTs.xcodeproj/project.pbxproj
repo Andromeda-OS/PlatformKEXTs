@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
 		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
 		1FA934821B897B4900BD68E3 /* IOACPIPlatformDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
@@ -102,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
