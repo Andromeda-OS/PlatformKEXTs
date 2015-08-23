@@ -13,6 +13,9 @@
 		1FA934831B897B4900BD68E3 /* IOACPIPlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347D1B897B4900BD68E3 /* IOACPIPlatformExpert.cpp */; };
 		1FA934841B897B4900BD68E3 /* IOACPIPlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */; };
 		1FA934851B897B4900BD68E3 /* IOACPITypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */; };
+		1FA934871B897D9700BD68E3 /* IOACPIPlatformExpert.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */; };
+		1FA934881B897D9700BD68E3 /* IOACPITypes.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */; };
+		1FA934891B897D9B00BD68E3 /* IOACPIPlatformDevice.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,22 @@
 			remoteInfo = mach_kernel;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1FA934861B897D8000BD68E3 /* Install Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Versions/A/Headers/IOKit/acpi";
+			dstSubfolderSpec = 0;
+			files = (
+				1FA934891B897D9B00BD68E3 /* IOACPIPlatformDevice.h in Install Headers */,
+				1FA934871B897D9700BD68E3 /* IOACPIPlatformExpert.h in Install Headers */,
+				1FA934881B897D9700BD68E3 /* IOACPITypes.h in Install Headers */,
+			);
+			name = "Install Headers";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1FA934481B89790900BD68E3 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../Kernel/Kernel.xcodeproj; sourceTree = "<group>"; };
@@ -162,6 +181,7 @@
 				1FA934681B89798000BD68E3 /* Frameworks */,
 				1FA934691B89798000BD68E3 /* Headers */,
 				1FA9346A1B89798000BD68E3 /* Resources */,
+				1FA934861B897D8000BD68E3 /* Install Headers */,
 			);
 			buildRules = (
 			);
