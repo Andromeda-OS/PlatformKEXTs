@@ -24,6 +24,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F9409871B8983A500F1DB6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
+		1F9409891B8983AA00F1DB6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
 		1FA934501B89790900BD68E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
@@ -262,6 +276,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F9409881B8983A500F1DB6F /* PBXTargetDependency */,
 			);
 			name = libkmod;
 			productName = libkmod;
@@ -279,6 +294,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F94098A1B8983AA00F1DB6F /* PBXTargetDependency */,
 			);
 			name = "libkmodc++";
 			productName = "libkmodc++";
@@ -402,6 +418,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F9409881B8983A500F1DB6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1F9409871B8983A500F1DB6F /* PBXContainerItemProxy */;
+		};
+		1F94098A1B8983AA00F1DB6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1F9409891B8983AA00F1DB6F /* PBXContainerItemProxy */;
+		};
 		1FA934791B897A2500BD68E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mach_kernel;
