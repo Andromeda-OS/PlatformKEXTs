@@ -449,6 +449,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = IOACPIFamily/Info.plist;
+				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULE_NAME = com.apple.iokit.IOACPIFamily;
 				MODULE_VERSION = 1.0.0d1;
@@ -495,6 +496,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = IOACPIFamily/Info.plist;
+				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULE_NAME = com.apple.iokit.IOACPIFamily;
 				MODULE_VERSION = 1.0.0d1;
@@ -548,6 +550,7 @@
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
 				);
+				INSTALL_PATH = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -592,6 +595,7 @@
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
 				);
+				INSTALL_PATH = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = kmod;
@@ -641,6 +645,7 @@
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
 				);
+				INSTALL_PATH = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -684,6 +689,7 @@
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
 					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
 				);
+				INSTALL_PATH = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
