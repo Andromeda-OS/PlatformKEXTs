@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FA9346F1B89798100BD68E3 /* IOACPIFamily.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9346E1B89798100BD68E3 /* IOACPIFamily.hpp */; };
-		1FA934711B89798100BD68E3 /* IOACPIFamily.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934701B89798100BD68E3 /* IOACPIFamily.cpp */; };
+		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
+		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
+		1FA934821B897B4900BD68E3 /* IOACPIPlatformDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
+		1FA934831B897B4900BD68E3 /* IOACPIPlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347D1B897B4900BD68E3 /* IOACPIPlatformExpert.cpp */; };
+		1FA934841B897B4900BD68E3 /* IOACPIPlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */; };
+		1FA934851B897B4900BD68E3 /* IOACPITypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +56,14 @@
 /* Begin PBXFileReference section */
 		1FA934481B89790900BD68E3 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../Kernel/Kernel.xcodeproj; sourceTree = "<group>"; };
 		1FA9346C1B89798000BD68E3 /* IOACPIFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOACPIFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FA9346E1B89798100BD68E3 /* IOACPIFamily.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = IOACPIFamily.hpp; sourceTree = "<group>"; };
-		1FA934701B89798100BD68E3 /* IOACPIFamily.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IOACPIFamily.cpp; sourceTree = "<group>"; };
 		1FA934721B89798100BD68E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "cross-build.xcconfig"; sourceTree = "<group>"; };
+		1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOACPIInlineIO.h; sourceTree = "<group>"; };
+		1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOACPIPlatformDevice.cpp; sourceTree = "<group>"; };
+		1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOACPIPlatformDevice.h; sourceTree = "<group>"; };
+		1FA9347D1B897B4900BD68E3 /* IOACPIPlatformExpert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOACPIPlatformExpert.cpp; sourceTree = "<group>"; };
+		1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOACPIPlatformExpert.h; sourceTree = "<group>"; };
+		1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOACPITypes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +99,12 @@
 		1FA9346D1B89798100BD68E3 /* IOACPIFamily */ = {
 			isa = PBXGroup;
 			children = (
-				1FA9346E1B89798100BD68E3 /* IOACPIFamily.hpp */,
-				1FA934701B89798100BD68E3 /* IOACPIFamily.cpp */,
+				1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */,
+				1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */,
+				1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */,
+				1FA9347D1B897B4900BD68E3 /* IOACPIPlatformExpert.cpp */,
+				1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */,
+				1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */,
 				1FA934721B89798100BD68E3 /* Info.plist */,
 			);
 			path = IOACPIFamily;
@@ -132,7 +144,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA9346F1B89798100BD68E3 /* IOACPIFamily.hpp in Headers */,
+				1FA934841B897B4900BD68E3 /* IOACPIPlatformExpert.h in Headers */,
+				1FA934851B897B4900BD68E3 /* IOACPITypes.h in Headers */,
+				1FA934821B897B4900BD68E3 /* IOACPIPlatformDevice.h in Headers */,
+				1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +256,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA934711B89798100BD68E3 /* IOACPIFamily.cpp in Sources */,
+				1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */,
+				1FA934831B897B4900BD68E3 /* IOACPIPlatformExpert.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +274,7 @@
 /* Begin XCBuildConfiguration section */
 		1FA934741B89798100BD68E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -308,6 +325,7 @@
 		};
 		1FA934751B89798100BD68E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934771B8979AB00BD68E3 /* cross-build.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
