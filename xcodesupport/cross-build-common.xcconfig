@@ -6,5 +6,5 @@
 //  Copyright © 2015 William Kent. All rights reserved.
 //
 
-ADDITIONAL_SDKS = "$(XNU_INSTALL_ROOT)"
+ADDITIONAL_SDKS = $(XNU_INSTALL_ROOT)
 OTHER_CFLAGS = -nostdinc -isysroot $(XNU_INSTALL_ROOT)
