@@ -120,6 +120,16 @@ bool AppleI386PlatformExpert::configure(IOService *provider) {
     return true;
 }
 
+bool AppleI386PlatformExpert::matchNubWithPropertyTable(IOService *nub, OSDictionary *table) {
+    OSString *nameProp;
+    OSString *match;
+
+    if ((nameProp = (OSString *)nub->getProperty(gIONameKey)) == 0) return false;
+    if ((match = (OSString *)nub->getProperty(gIONameMatchKey)) == 0) return false;
+
+    return match->isEqualTo(nameProp);
+}
+
 IOService *AppleI386PlatformExpert::createNub(OSDictionary *from) {
     IOService *nub;
 
