@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1FA934A61B897EAD00BD68E3"
-               BuildableName = "liblibkmodc++.a"
+               BuildableName = "libkmodc++.a"
                BlueprintName = "libkmodc++"
                ReferencedContainer = "container:PlatformKEXTs.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1FA934A61B897EAD00BD68E3"
-            BuildableName = "liblibkmodc++.a"
+            BuildableName = "libkmodc++.a"
             BlueprintName = "libkmodc++"
             ReferencedContainer = "container:PlatformKEXTs.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1FA934A61B897EAD00BD68E3"
-            BuildableName = "liblibkmodc++.a"
+            BuildableName = "libkmodc++.a"
             BlueprintName = "libkmodc++"
             ReferencedContainer = "container:PlatformKEXTs.xcodeproj">
          </BuildableReference>
