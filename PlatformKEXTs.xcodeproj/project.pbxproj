@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F56E8A61B8A9ECB0095848C /* AppleI386PlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */; };
 		1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */; };
+		1F56E8BA1B8AB4A20095848C /* AppleI386CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */; };
+		1F56E8BB1B8AB4A20095848C /* AppleI386CPU.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8B91B8AB4A20095848C /* AppleI386CPU.h */; };
 		1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
 		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
@@ -105,6 +107,8 @@
 		1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleI386PlatformExpert.h; sourceTree = "<group>"; };
 		1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleI386PlatformExpert.cpp; sourceTree = "<group>"; };
 		1F56E8A91B8A9ECB0095848C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppleI386CPU.cpp; sourceTree = "<group>"; };
+		1F56E8B91B8AB4A20095848C /* AppleI386CPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleI386CPU.h; sourceTree = "<group>"; };
 		1F9409841B8980AB00F1DB6F /* cross-build-common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "cross-build-common.xcconfig"; sourceTree = "<group>"; };
 		1FA934481B89790900BD68E3 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../Kernel/Kernel.xcodeproj; sourceTree = "<group>"; };
 		1FA9346C1B89798000BD68E3 /* IOACPIFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOACPIFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +167,8 @@
 			children = (
 				1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */,
 				1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */,
+				1F56E8B91B8AB4A20095848C /* AppleI386CPU.h */,
+				1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */,
 				1F56E8A91B8A9ECB0095848C /* Info.plist */,
 			);
 			path = AppleI386PlatformExpert;
@@ -253,6 +259,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F56E8BB1B8AB4A20095848C /* AppleI386CPU.h in Headers */,
 				1F56E8A61B8A9ECB0095848C /* AppleI386PlatformExpert.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */,
+				1F56E8BA1B8AB4A20095848C /* AppleI386CPU.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
