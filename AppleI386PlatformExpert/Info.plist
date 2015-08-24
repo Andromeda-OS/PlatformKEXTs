@@ -21,7 +21,30 @@
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>IOKitPersonalities</key>
-	<dict/>
+	<dict>
+		<key>Generic i386 Platform</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>IOProviderClass</key>
+			<string>IOPlatformExpert</string>
+			<key>IOClass</key>
+			<string>AppleI386PlatformExpert</string>
+		</dict>
+		<key>Generic i386 Platform Device</key>
+		<dict>
+			<key>IOProbeScore</key>
+			<string>10000</string>
+			<key>CFBundleIdentifier</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+			<key>IOProviderClass</key>
+			<string>IOPlatformExpertDevice</string>
+			<key>IOClass</key>
+			<string>AppleI386PlatformExpertDevice</string>
+			<key>IONameMatch</key>
+			<string>ACPI</string>
+		</dict>
+	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2015 William Kent. All rights reserved.</string>
 	<key>OSBundleLibraries</key>
