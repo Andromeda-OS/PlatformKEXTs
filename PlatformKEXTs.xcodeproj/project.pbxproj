@@ -1133,6 +1133,7 @@
 				1F56E8AB1B8A9ECB0095848C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F56E8C91B8ABC4B0095848C /* Build configuration list for PBXNativeTarget "AppleAPIC" */ = {
 			isa = XCConfigurationList;
@@ -1141,6 +1142,7 @@
 				1F56E8CB1B8ABC4B0095848C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA934731B89798100BD68E3 /* Build configuration list for PBXNativeTarget "IOACPIFamily" */ = {
 			isa = XCConfigurationList;
