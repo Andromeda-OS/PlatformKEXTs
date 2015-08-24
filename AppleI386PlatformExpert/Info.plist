@@ -50,6 +50,15 @@
 	<key>OSBundleRequired</key>
 	<string>Root</string>
 	<key>OSBundleLibraries</key>
-	<dict/>
+	<dict>
+		<key>com.apple.kpi.iokit</key>
+		<string>7.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0.0d0</string>
+		<key>com.apple.kpi.private</key>
+		<string>8.0.0b1</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>8.0.0b1</string>
+	</dict>
 </dict>
 </plist>
