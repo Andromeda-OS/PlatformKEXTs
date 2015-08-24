@@ -125,7 +125,7 @@
 		1FA934941B897E7600BD68E3 /* c_stop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = c_stop.c; sourceTree = "<group>"; };
 		1FA934951B897E7600BD68E3 /* cplus_start.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cplus_start.c; sourceTree = "<group>"; };
 		1FA934961B897E7600BD68E3 /* cplus_stop.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cplus_stop.c; sourceTree = "<group>"; };
-		1FA934A71B897EAD00BD68E3 /* liblibkmodc++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "liblibkmodc++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA934A71B897EAD00BD68E3 /* libkmodc++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libkmodc++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "cross-build-debug.xcconfig"; sourceTree = "<group>"; };
 		1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "cross-build-release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,7 +248,7 @@
 			children = (
 				1FA9346C1B89798000BD68E3 /* IOACPIFamily.kext */,
 				1FA9348E1B897E1600BD68E3 /* libkmod.a */,
-				1FA934A71B897EAD00BD68E3 /* liblibkmodc++.a */,
+				1FA934A71B897EAD00BD68E3 /* libkmodc++.a */,
 				1F56E8A31B8A9ECB0095848C /* AppleI386PlatformExpert.kext */,
 			);
 			name = Products;
@@ -366,7 +366,7 @@
 			);
 			name = "libkmodc++";
 			productName = "libkmodc++";
-			productReference = 1FA934A71B897EAD00BD68E3 /* liblibkmodc++.a */;
+			productReference = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -865,7 +865,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "kmodc++";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -908,7 +908,7 @@
 				INSTALL_PATH = /usr/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "kmodc++";
 				SDKROOT = macosx;
 			};
 			name = Release;
