@@ -20,3 +20,32 @@
  * This file was modified by William Kent in 2015 to support the Andromeda
  * project. This notice is included in support of clause 2.2(b) of the License.
  */
+
+#ifndef _IOKIT_APPLEI386CPU_H
+#define _IOKIT_APPLEI386CPU_H
+
+#include <IOKit/IOCPU.h>
+
+class AppleI386CPU : public IOCPU {
+    OSDeclareDefaultStructors(AppleI386CPU);
+
+private:
+    IOCPUInterruptController *cpuIC;
+
+public:
+    virtual bool start(IOService *provider);
+    virtual void initCPU(bool boot);
+    virtual void quiesceCPU(void);
+    virtual kern_return_t startCPU(vm_offset_t start_paddr, vm_offset_t arg_paddr);
+    virtual void haltCPU(void);
+    virtual const OSSymbol *getCPUName(void);
+};
+
+class AppleI386CPUInterruptController : public IOCPUInterruptController {
+    OSDeclareDefaultStructors(AppleI386CPUInterruptController);
+
+public:
+    virtual IOReturn handleInterrupt(void *refCon, IOService *nub, int source);
+};
+
+#endif
