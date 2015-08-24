@@ -567,6 +567,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders";
 				INFOPLIST_FILE = AppleI386PlatformExpert/Info.plist;
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
@@ -613,6 +614,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders";
 				INFOPLIST_FILE = AppleI386PlatformExpert/Info.plist;
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
