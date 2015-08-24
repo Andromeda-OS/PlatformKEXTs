@@ -181,3 +181,147 @@ void AppleI386PlatformExpert::setupBIOS(IOService *nub) {
     // PCI bus data. While the booter does collect some PCI data,
     // but it does not include the data needed here.
 }
+
+bool AppleI386PlatformExpert::getMachineName(char *name, int maxLength) {
+    strncpy(name, "x86", maxLength);
+    return true;
+}
+
+bool AppleI386PlatformExpert::getModelName(char *name, int maxLengh) {
+    i386_cpu_info_t *cpuid_cpu_info = cpuid_info();
+
+    if (cpuid_cpu_info->cpuid_brand_string[0] != '\0') {
+        strncpy(name, cpuid_cpu_info->cpuid_brand_string, maxLengh);
+    } else {
+        strncpy(name, cpuid_cpu_info->cpuid_model_string, maxLengh);
+    }
+
+    return true;
+}
+
+int AppleI386PlatformExpert::handlePEHaltRestart(unsigned int type) {
+    int ret = -1;
+
+    switch (type) {
+        case kPERestartCPU:
+            // Use the pexpert service to reset the system through the keyboard controller.
+            kdreboot();
+            break;
+
+        case kPEHaltCPU:
+        default:
+            ret = -1;
+            break;
+    }
+
+    return ret;
+}
+
+bool AppleI386PlatformExpert::setNubInterruptVectors(IOService *nub, const UInt32 *vectors, UInt32 vectorCount) {
+    OSArray *controller = 0;
+    OSArray *specifier = 0;
+    bool success = false;
+
+    if (vectorCount == 0) {
+        nub->removeProperty(gIOInterruptControllersKey);
+        nub->removeProperty(gIOInterruptSpecifiersKey);
+        return true;
+    }
+
+    specifier = OSArray::withCapacity(vectorCount);
+    controller = OSArray::withCapacity(vectorCount);
+    if (!specifier || !controller) goto done;
+
+    for (UInt32 i = 0; i < vectorCount; i++) {
+        OSData *data = OSData::withBytes(&vectors[i], sizeof(vectors[i]));
+        specifier->setObject(data);
+        controller->setObject(_interruptControllerName);
+        if (data) data->release();
+    }
+
+    nub->setProperty(gIOInterruptControllersKey, controller);
+    nub->setProperty(gIOInterruptSpecifiersKey, specifier);
+    success = true;
+
+done:
+    if (specifier) specifier->release();
+    if (controller) controller->release();
+    return success;
+}
+
+bool AppleI386PlatformExpert::setNubInterruptVector(IOService *nub, UInt32 vector) {
+    return setNubInterruptVectors(nub, &vector, 1);
+}
+
+IOReturn AppleI386PlatformExpert::callPlatformFunction(const OSSymbol *functionName, bool waitForFunction, void *param1, void *param2, void *param3, void *param4) {
+    bool ok;
+
+    if (functionName->isEqualTo("SetDeviceInterrupts")) {
+        IOService *nub = (IOService *)param1;
+        UInt32 *vectors = (UInt32 *)param2;
+        UInt32 vectorCount = (UInt32)((UInt64)param3);
+        bool exclusive = (bool)param4;
+
+        if (vectorCount != 1) return kIOReturnBadArgument;
+
+        ok = reserveSystemInterrupt(nub, vectors[0], exclusive);
+        if (ok == false) return kIOReturnNoResources;
+
+        ok = setNubInterruptVector(nub, vectors[0]);
+        if (ok == false) releaseSystemInterrupt(nub, vectors[0], exclusive);
+
+        return ok ? kIOReturnSuccess : kIOReturnNoMemory;
+    } else if (functionName->isEqualTo("SetBusClockRateMHz")) {
+        UInt32 rateMHz = (UInt32)((UInt64)param1);
+        gPEClockFrequencyInfo.bus_clock_rate_hz = rateMHz * 1000000;
+        return kIOReturnSuccess;
+    } else if (functionName->isEqualTo("SetCPUClockRateMHz")) {
+        UInt32 rateMHz = (UInt32)((UInt64)param1);
+        gPEClockFrequencyInfo.cpu_clock_rate_hz = rateMHz * 1000000;
+        return kIOReturnSuccess;
+    }
+
+    return super::callPlatformFunction(functionName, waitForFunction, param1, param2, param3, param4);
+}
+
+bool AppleI386PlatformExpert::reserveSystemInterrupt(IOService *client, UInt32 vectorNumber, bool exclusive) {
+    bool ok = false;
+    if (vectorNumber >= kSystemIRQCount) return ok;
+
+    IOLockLock(ResourceLock);
+
+    if (exclusive) {
+        if (IRQ[vectorNumber].status == kIRQAvailable) {
+            IRQ[vectorNumber].status = kIRQExclusive;
+            IRQ[vectorNumber].consumers = 1;
+            ok = true;
+        }
+    } else {
+        if (IRQ[vectorNumber].status == kIRQAvailable || IRQ[vectorNumber].status == kIRQSharable) {
+            IRQ[vectorNumber].status = kIRQSharable;
+            IRQ[vectorNumber].consumers++;
+            ok = true;
+        }
+    }
+
+    IOLockUnlock(ResourceLock);
+    return ok;
+}
+
+void AppleI386PlatformExpert::releaseSystemInterrupt(IOService *client, UInt32 vectorNumber, bool exclusive) {
+    if (vectorNumber >= kSystemIRQCount) return;
+    IOLockLock(ResourceLock);
+
+    if (exclusive) {
+        if (IRQ[vectorNumber].status == kIRQExclusive) {
+            IRQ[vectorNumber].status = kIRQAvailable;
+            IRQ[vectorNumber].consumers = 0;
+        }
+    } else {
+        if (IRQ[vectorNumber].status == kIRQSharable && --IRQ[vectorNumber].consumers == 0) {
+            IRQ[vectorNumber].status = kIRQAvailable;
+        }
+    }
+
+    IOLockUnlock(ResourceLock);
+}
