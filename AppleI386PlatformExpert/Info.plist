@@ -47,6 +47,8 @@
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2015 William Kent. All rights reserved.</string>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
 	<key>OSBundleLibraries</key>
 	<dict/>
 </dict>
