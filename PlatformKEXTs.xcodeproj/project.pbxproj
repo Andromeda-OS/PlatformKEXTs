@@ -26,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F56E8B51B8A9F5A0095848C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
 		1F9409871B8983A500F1DB6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
@@ -290,6 +297,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				1F56E8B61B8A9F5A0095848C /* PBXTargetDependency */,
 			);
 			name = AppleI386PlatformExpert;
 			productName = AppleI386PlatformExpert;
@@ -488,6 +496,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F56E8B61B8A9F5A0095848C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1F56E8B51B8A9F5A0095848C /* PBXContainerItemProxy */;
+		};
 		1F9409881B8983A500F1DB6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mach_kernel;
@@ -508,6 +521,7 @@
 /* Begin XCBuildConfiguration section */
 		1F56E8AA1B8A9ECB0095848C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -558,6 +572,7 @@
 		};
 		1F56E8AB1B8A9ECB0095848C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
