@@ -20,3 +20,5 @@
  * This file was modified by William Kent in 2015 to support the Andromeda
  * project. This notice is included in support of clause 2.2(b) of the License.
  */
+
+#include "AppleI386PlatformExpert.h"

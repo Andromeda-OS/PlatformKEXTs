@@ -20,3 +20,37 @@
  * This file was modified by William Kent in 2015 to support the Andromeda
  * project. This notice is included in support of clause 2.2(b) of the License.
  */
+
+#ifndef _IOKIT_APPLEI386PLATFORM_H
+#define _IOKIT_APPLEI386PLATFORM_H
+
+#include <IOKit/IOPlatformExpert.h>
+
+class AppleI386PlatformExpert : public IOPlatformExpert {
+    OSDeclareDefaultStructors(AppleI386PlatformExpert)
+
+private:
+    const OSSymbol *_interruptControllerName;
+
+    void setupPIC(IOService *nub);
+    void setupBIOS(IOService *nub);
+
+    static int handlePEHaltRestart(unsigned int type);
+
+public:
+    virtual bool init(OSDictionary *properties);
+    virtual IOService *probe(IOService *provider, SInt32 *score);
+    virtual bool start(IOService *provider);
+    virtual bool configure(IOService *provider);
+    virtual bool matchNubWithPropertyTable(IOService *nub, OSDictionary *table);
+    virtual IOService *createNub(OSDictionary *from);
+    virtual bool reserveSystemInterrupt(IOService *client, UInt32 vectorNumber, bool exclusive);
+    virtual void releaseSystemInterrupt(IOService *client, UInt32 vectorNumber, bool exclusive);
+    virtual bool setNubInterruptVectors(IOService *nub, const UInt32 vectors[], UInt32 vectorCount);
+    virtual bool setNubInterruptVector(IOService *nub, UInt32 vector);
+    virtual IOReturn callPlatformFunction(const OSSymbol *functionName, bool waitForFunction, void *param1, void *param2, void *param3, void *param4);
+    virtual bool getModelName(char *name, int maxLengh);
+    virtual bool getMachineName(char *name, int maxLength);
+};
+
+#endif /* ! _IOKIT_APPLEI386PLATFORM_H */
