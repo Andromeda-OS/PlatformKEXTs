@@ -22,3 +22,65 @@
  */
 
 #include "AppleI386CPU.h"
+
+#undef super
+#define super IOCPU
+
+OSDefineMetaClassAndStructors(AppleI386CPU, IOCPU);
+
+bool AppleI386CPU::start(IOService *provider) {
+    if (!super::start(provider)) return false;
+
+    cpuIC = new AppleI386CPUInterruptController;
+    if (cpuIC == 0) return false;
+    if (cpuIC->initCPUInterruptController(1) != kIOReturnSuccess) return false;
+
+    cpuIC->attach(this);
+    cpuIC->registerCPUInterruptController();
+
+    setCPUState(kIOCPUStateUninitalized);
+    initCPU(true);
+    registerService();
+
+    return true;
+}
+
+void AppleI386CPU::initCPU(bool boot) {
+    cpuIC->enableCPUInterrupt(this);
+    setCPUState(kIOCPUStateRunning);
+}
+
+void AppleI386CPU::quiesceCPU() {
+    // Not required.
+}
+
+kern_return_t AppleI386CPU::startCPU(vm_offset_t start_paddr, vm_offset_t arg_paddr) {
+    // Not implemented.
+    return KERN_FAILURE;
+}
+
+void AppleI386CPU::haltCPU() {
+    // Not required.
+}
+
+const OSSymbol *AppleI386CPU::getCPUName() {
+    return OSSymbol::withCStringNoCopy("Primary0");
+}
+
+#pragma mark -
+#undef super
+#define super IOCPUInterruptController
+
+OSDefineMetaClassAndStructors(AppleI386CPUInterruptController, IOCPUInterruptController);
+
+IOReturn AppleI386CPUInterruptController::handleInterrupt(void *refCon, IOService *nub, int source) {
+    // Override the implementation in IOCPUInterruptController to
+    // dispatch interrupts the old way. The source argument is ignored;
+    // the first IOCPUInterruptController in the vector array is always used.
+
+    IOInterruptVector *vector = &vectors[0];
+    if (!vector->interruptRegistered) return kIOReturnInvalid;
+
+    vector->handler(vector->target, refCon, vector->nub, source);
+    return kIOReturnSuccess;
+}
