@@ -11,6 +11,7 @@
 		1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */; };
 		1F56E8BA1B8AB4A20095848C /* AppleI386CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */; };
 		1F56E8BB1B8AB4A20095848C /* AppleI386CPU.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8B91B8AB4A20095848C /* AppleI386CPU.h */; };
+		1F56E8BC1B8AB7F40095848C /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
 		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
@@ -134,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F56E8BC1B8AB7F40095848C /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
