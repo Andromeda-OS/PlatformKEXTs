@@ -25,38 +25,6 @@
 asm(".constructors_used = 0");
 asm(".private_extern .constructors_used");
 
-extern kmod_start_func_t *_realmain;
-extern kmod_info_t KMOD_INFO_NAME;
-
-// Functions defined in libkern/c++/OSRuntime.cpp
-extern kern_return_t OSRuntimeInitializeCPP(kmod_info_t *ki, void *data);
-extern kern_return_t OSRuntimeFinalizeCPP(kmod_info_t *ki, void *data);
-
-__attribute__((visibility("hidden"))) kern_return_t _start(kmod_info_t *ki, void *data) {
-    kern_return_t result = OSRuntimeInitializeCPP(ki, data);
-
-    if (result == KERN_SUCCESS && _realmain) {
-        result = (*_realmain)(ki, data);
-
-        // If _realmain failed, tear down C++.
-        if (result != KERN_SUCCESS) OSRuntimeFinalizeCPP(ki, data);
-    }
-
-    return result;
-}
-
-__attribute__((visibility("hidden"))) const char *OSKextGetCurrentIdentifier(void) {
-    return KMOD_INFO_NAME.name;
-}
-
-__attribute__((visibility("hidden"))) const char *OSKextGetCurrentVersionString(void) {
-    return KMOD_INFO_NAME.version;
-}
-
-__attribute__((visibility("hidden"))) OSKextLoadTag OSKextGetCurrentLoadTag(void) {
-    return (OSKextLoadTag) KMOD_INFO_NAME.id;
-}
-
 // This code is required for static constructors to run.
-extern void __cxx_global_var_init(void);
+__attribute__((visibility("hidden"))) void __cxx_global_var_init(void);
 __attribute__((used, section("__DATA, __mod_init_func"))) typeof(__cxx_global_var_init) *_module_init_func = __cxx_global_var_init;
