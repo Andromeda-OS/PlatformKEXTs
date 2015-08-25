@@ -11,15 +11,12 @@
 		1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */; };
 		1F56E8BA1B8AB4A20095848C /* AppleI386CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */; };
 		1F56E8BB1B8AB4A20095848C /* AppleI386CPU.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8B91B8AB4A20095848C /* AppleI386CPU.h */; };
-		1F56E8BC1B8AB7F40095848C /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1F56E8C71B8ABC4B0095848C /* AppleAPIC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8C61B8ABC4B0095848C /* AppleAPIC.cpp */; };
-		1F56E8CE1B8ABC640095848C /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1F56E8D21B8ABC940095848C /* Apple8259PIC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8CF1B8ABC940095848C /* Apple8259PIC.h */; };
 		1F56E8D31B8ABC940095848C /* AppleAPIC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8D01B8ABC940095848C /* AppleAPIC.h */; };
 		1F56E8D41B8ABC940095848C /* PICShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8D11B8ABC940095848C /* PICShared.h */; };
 		1F56E8D71B8ABE840095848C /* AppleI386PlatformExpertDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8D51B8ABE840095848C /* AppleI386PlatformExpertDevice.cpp */; };
 		1F56E8D81B8ABE840095848C /* AppleI386PlatformExpertDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8D61B8ABE840095848C /* AppleI386PlatformExpertDevice.h */; };
-		1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA9348E1B897E1600BD68E3 /* libkmod.a */; };
 		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
 		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
 		1FA934821B897B4900BD68E3 /* IOACPIPlatformDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
@@ -33,9 +30,12 @@
 		1FA934981B897E7600BD68E3 /* c_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934941B897E7600BD68E3 /* c_stop.c */; };
 		1FA934AB1B897EB300BD68E3 /* cplus_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934951B897E7600BD68E3 /* cplus_start.c */; };
 		1FA934AC1B897EB300BD68E3 /* cplus_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934961B897E7600BD68E3 /* cplus_stop.c */; };
+		1FB82F551B8C1AA5004630CF /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
+		1FB82F561B8C1AA5004630CF /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
+		1FB82F591B8C1AB3004630CF /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
+		1FB82F5C1B8C1AC3004630CF /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
 		1FF895FA1B8C156D003B2FA4 /* cxx-compat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FF895F91B8C156D003B2FA4 /* cxx-compat.cpp */; };
 		1FF895FC1B8C17A0003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
-		1FF896051B8C1800003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
 		1FF896061B8C1804003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
 /* End PBXBuildFile section */
 
@@ -103,12 +103,26 @@
 			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
 			remoteInfo = mach_kernel;
 		};
-		1FF895FD1B8C17D8003B2FA4 /* PBXContainerItemProxy */ = {
+		1FB82F531B8C1A9D004630CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1FA9348D1B897E1600BD68E3;
-			remoteInfo = libkmod;
+			remoteGlobalIDString = 1FA934A61B897EAD00BD68E3;
+			remoteInfo = "libkmodc++";
+		};
+		1FB82F571B8C1AAD004630CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA934A61B897EAD00BD68E3;
+			remoteInfo = "libkmodc++";
+		};
+		1FB82F5A1B8C1ABA004630CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA934A61B897EAD00BD68E3;
+			remoteInfo = "libkmodc++";
 		};
 		1FF895FF1B8C17D8003B2FA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -117,26 +131,12 @@
 			remoteGlobalIDString = 1FF895F01B8C1550003B2FA4;
 			remoteInfo = "libkmod-c++-abicompat";
 		};
-		1FF896011B8C17F5003B2FA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FA9348D1B897E1600BD68E3;
-			remoteInfo = libkmod;
-		};
 		1FF896031B8C17F5003B2FA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1FF895F01B8C1550003B2FA4;
 			remoteInfo = "libkmod-c++-abicompat";
-		};
-		1FF896071B8C1808003B2FA4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1FA9348D1B897E1600BD68E3;
-			remoteInfo = libkmod;
 		};
 		1FF896091B8C1808003B2FA4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -205,8 +205,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB82F5C1B8C1AC3004630CF /* libkmodc++.a in Frameworks */,
 				1FF895FC1B8C17A0003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */,
-				1F56E8BC1B8AB7F40095848C /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +214,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB82F591B8C1AB3004630CF /* libkmodc++.a in Frameworks */,
 				1FF896061B8C1804003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */,
-				1F56E8CE1B8ABC640095848C /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +223,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF896051B8C1800003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */,
-				1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */,
+				1FB82F551B8C1AA5004630CF /* libkmod-c++-abicompat.a in Frameworks */,
+				1FB82F561B8C1AA5004630CF /* libkmodc++.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +430,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1FF895FE1B8C17D8003B2FA4 /* PBXTargetDependency */,
+				1FB82F5B1B8C1ABA004630CF /* PBXTargetDependency */,
 				1FF896001B8C17D8003B2FA4 /* PBXTargetDependency */,
 				1F56E8B61B8A9F5A0095848C /* PBXTargetDependency */,
 			);
@@ -451,7 +451,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1FF896081B8C1808003B2FA4 /* PBXTargetDependency */,
+				1FB82F581B8C1AAD004630CF /* PBXTargetDependency */,
 				1FF8960A1B8C1808003B2FA4 /* PBXTargetDependency */,
 				1F56E8CD1B8ABC5F0095848C /* PBXTargetDependency */,
 			);
@@ -473,7 +473,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1FF896021B8C17F5003B2FA4 /* PBXTargetDependency */,
+				1FB82F541B8C1A9D004630CF /* PBXTargetDependency */,
 				1FF896041B8C17F5003B2FA4 /* PBXTargetDependency */,
 				1FA934791B897A2500BD68E3 /* PBXTargetDependency */,
 			);
@@ -729,30 +729,30 @@
 			name = mach_kernel;
 			targetProxy = 1FA934781B897A2500BD68E3 /* PBXContainerItemProxy */;
 		};
-		1FF895FE1B8C17D8003B2FA4 /* PBXTargetDependency */ = {
+		1FB82F541B8C1A9D004630CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1FA9348D1B897E1600BD68E3 /* libkmod */;
-			targetProxy = 1FF895FD1B8C17D8003B2FA4 /* PBXContainerItemProxy */;
+			target = 1FA934A61B897EAD00BD68E3 /* libkmodc++ */;
+			targetProxy = 1FB82F531B8C1A9D004630CF /* PBXContainerItemProxy */;
+		};
+		1FB82F581B8C1AAD004630CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA934A61B897EAD00BD68E3 /* libkmodc++ */;
+			targetProxy = 1FB82F571B8C1AAD004630CF /* PBXContainerItemProxy */;
+		};
+		1FB82F5B1B8C1ABA004630CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA934A61B897EAD00BD68E3 /* libkmodc++ */;
+			targetProxy = 1FB82F5A1B8C1ABA004630CF /* PBXContainerItemProxy */;
 		};
 		1FF896001B8C17D8003B2FA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FF895F01B8C1550003B2FA4 /* libkmod-c++-abicompat */;
 			targetProxy = 1FF895FF1B8C17D8003B2FA4 /* PBXContainerItemProxy */;
 		};
-		1FF896021B8C17F5003B2FA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1FA9348D1B897E1600BD68E3 /* libkmod */;
-			targetProxy = 1FF896011B8C17F5003B2FA4 /* PBXContainerItemProxy */;
-		};
 		1FF896041B8C17F5003B2FA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1FF895F01B8C1550003B2FA4 /* libkmod-c++-abicompat */;
 			targetProxy = 1FF896031B8C17F5003B2FA4 /* PBXContainerItemProxy */;
-		};
-		1FF896081B8C1808003B2FA4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1FA9348D1B897E1600BD68E3 /* libkmod */;
-			targetProxy = 1FF896071B8C1808003B2FA4 /* PBXContainerItemProxy */;
 		};
 		1FF8960A1B8C1808003B2FA4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
