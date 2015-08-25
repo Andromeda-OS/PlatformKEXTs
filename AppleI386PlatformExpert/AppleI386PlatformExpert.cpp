@@ -32,13 +32,10 @@
 
 extern "C" {
 #include <i386/cpuid.h>
+#include <pexpert/i386/protos.h>
 }
 
 #include "AppleI386PlatformExpert.h"
-
-__BEGIN_DECLS
-extern void kdreboot(void);
-__END_DECLS
 
 enum {
     kIRQAvailable   = 0,
@@ -211,11 +208,24 @@ bool AppleI386PlatformExpert::getModelName(char *name, int maxLengh) {
 
 int AppleI386PlatformExpert::handlePEHaltRestart(unsigned int type) {
     int ret = -1;
+    int temporary_sum = 0;
 
     switch (type) {
         case kPERestartCPU:
-            // Use the pexpert service to reset the system through the keyboard controller.
-            kdreboot();
+            // Note: This code may or may not work reliably on all systems.
+            // The original author of it indicated that it should work on any
+            // system with a compliant PCI controller.
+
+            // Obtained from: http://smackerelofopinion.blogspot.nl/2009/06/rebooting-pc.html
+            outb(0xCF9, 0x02);
+
+            // A delay of some sort is required here.
+            temporary_sum = 2;
+            temporary_sum += 2;
+
+            outb(0xCF9, 0x04);
+
+            // This should not be reached, but just in case...
             break;
 
         case kPEHaltCPU:
