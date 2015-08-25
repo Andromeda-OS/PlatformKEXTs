@@ -56,3 +56,7 @@ __attribute__((visibility("hidden"))) const char *OSKextGetCurrentVersionString(
 __attribute__((visibility("hidden"))) OSKextLoadTag OSKextGetCurrentLoadTag(void) {
     return (OSKextLoadTag) KMOD_INFO_NAME.id;
 }
+
+// This code is required for static constructors to run.
+extern void __cxx_global_var_init(void);
+__attribute__((used, section("__DATA, __mod_init_func"))) typeof(__cxx_global_var_init) *_module_init_func = __cxx_global_var_init;
