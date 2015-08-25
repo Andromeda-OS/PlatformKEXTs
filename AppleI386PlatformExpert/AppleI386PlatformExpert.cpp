@@ -122,7 +122,7 @@ bool AppleI386PlatformExpert::matchNubWithPropertyTable(IOService *nub, OSDictio
     OSString *match;
 
     if ((nameProp = (OSString *)nub->getProperty(gIONameKey)) == 0) return false;
-    if ((match = (OSString *)nub->getProperty(gIONameMatchKey)) == 0) return false;
+    if ((match = (OSString *)table->getObject(gIONameMatchKey)) == 0) return false;
 
     return match->isEqualTo(nameProp);
 }
