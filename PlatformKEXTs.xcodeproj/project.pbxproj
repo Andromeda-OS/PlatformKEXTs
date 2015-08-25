@@ -34,6 +34,9 @@
 		1FA934AB1B897EB300BD68E3 /* cplus_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934951B897E7600BD68E3 /* cplus_start.c */; };
 		1FA934AC1B897EB300BD68E3 /* cplus_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934961B897E7600BD68E3 /* cplus_stop.c */; };
 		1FF895FA1B8C156D003B2FA4 /* cxx-compat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FF895F91B8C156D003B2FA4 /* cxx-compat.cpp */; };
+		1FF895FC1B8C17A0003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
+		1FF896051B8C1800003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
+		1FF896061B8C1804003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF895F11B8C1550003B2FA4 /* libkmod-c++-abicompat.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,48 @@
 			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
 			remoteInfo = mach_kernel;
 		};
+		1FF895FD1B8C17D8003B2FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA9348D1B897E1600BD68E3;
+			remoteInfo = libkmod;
+		};
+		1FF895FF1B8C17D8003B2FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF895F01B8C1550003B2FA4;
+			remoteInfo = "libkmod-c++-abicompat";
+		};
+		1FF896011B8C17F5003B2FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA9348D1B897E1600BD68E3;
+			remoteInfo = libkmod;
+		};
+		1FF896031B8C17F5003B2FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF895F01B8C1550003B2FA4;
+			remoteInfo = "libkmod-c++-abicompat";
+		};
+		1FF896071B8C1808003B2FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA9348D1B897E1600BD68E3;
+			remoteInfo = libkmod;
+		};
+		1FF896091B8C1808003B2FA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF895F01B8C1550003B2FA4;
+			remoteInfo = "libkmod-c++-abicompat";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -160,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF895FC1B8C17A0003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */,
 				1F56E8BC1B8AB7F40095848C /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +214,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF896061B8C1804003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */,
 				1F56E8CE1B8ABC640095848C /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +223,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FF896051B8C1800003B2FA4 /* libkmod-c++-abicompat.a in Frameworks */,
 				1F9409861B89823000F1DB6F /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +430,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1FF895FE1B8C17D8003B2FA4 /* PBXTargetDependency */,
+				1FF896001B8C17D8003B2FA4 /* PBXTargetDependency */,
 				1F56E8B61B8A9F5A0095848C /* PBXTargetDependency */,
 			);
 			name = AppleI386PlatformExpert;
@@ -401,6 +451,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1FF896081B8C1808003B2FA4 /* PBXTargetDependency */,
+				1FF8960A1B8C1808003B2FA4 /* PBXTargetDependency */,
 				1F56E8CD1B8ABC5F0095848C /* PBXTargetDependency */,
 			);
 			name = AppleAPIC;
@@ -421,6 +473,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1FF896021B8C17F5003B2FA4 /* PBXTargetDependency */,
+				1FF896041B8C17F5003B2FA4 /* PBXTargetDependency */,
 				1FA934791B897A2500BD68E3 /* PBXTargetDependency */,
 			);
 			name = IOACPIFamily;
@@ -674,6 +728,36 @@
 			isa = PBXTargetDependency;
 			name = mach_kernel;
 			targetProxy = 1FA934781B897A2500BD68E3 /* PBXContainerItemProxy */;
+		};
+		1FF895FE1B8C17D8003B2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA9348D1B897E1600BD68E3 /* libkmod */;
+			targetProxy = 1FF895FD1B8C17D8003B2FA4 /* PBXContainerItemProxy */;
+		};
+		1FF896001B8C17D8003B2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF895F01B8C1550003B2FA4 /* libkmod-c++-abicompat */;
+			targetProxy = 1FF895FF1B8C17D8003B2FA4 /* PBXContainerItemProxy */;
+		};
+		1FF896021B8C17F5003B2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA9348D1B897E1600BD68E3 /* libkmod */;
+			targetProxy = 1FF896011B8C17F5003B2FA4 /* PBXContainerItemProxy */;
+		};
+		1FF896041B8C17F5003B2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF895F01B8C1550003B2FA4 /* libkmod-c++-abicompat */;
+			targetProxy = 1FF896031B8C17F5003B2FA4 /* PBXContainerItemProxy */;
+		};
+		1FF896081B8C1808003B2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA9348D1B897E1600BD68E3 /* libkmod */;
+			targetProxy = 1FF896071B8C1808003B2FA4 /* PBXContainerItemProxy */;
+		};
+		1FF8960A1B8C1808003B2FA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF895F01B8C1550003B2FA4 /* libkmod-c++-abicompat */;
+			targetProxy = 1FF896091B8C1808003B2FA4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
