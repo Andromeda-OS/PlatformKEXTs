@@ -1400,6 +1400,7 @@
 				1FF895F31B8C1550003B2FA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
