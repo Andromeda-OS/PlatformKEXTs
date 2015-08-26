@@ -24,3 +24,8 @@
 #include "AppleI386PlatformExpertDevice.h"
 
 OSDefineMetaClassAndStructors(AppleI386PlatformExpertDevice, IOPlatformExpertDevice);
+
+IOService * AppleI386PlatformExpertDevice::probe(IOService *provider, SInt32 *score) {
+    if (score != 0) *score = 10000;
+    return this;
+}

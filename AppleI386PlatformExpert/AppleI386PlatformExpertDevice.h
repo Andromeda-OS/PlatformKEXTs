@@ -28,7 +28,9 @@
 
 class AppleI386PlatformExpertDevice : IOPlatformExpertDevice {
     OSDeclareDefaultStructors(AppleI386PlatformExpertDevice);
-    // Nothing else is needed.
+
+public:
+    virtual IOService * probe(IOService *provider, SInt32 *score);
 };
 
 #endif
