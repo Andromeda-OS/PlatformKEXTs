@@ -6,6 +6,20 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1FF96AB81BD3127F00FD1B19 /* IOACPIFamily Headers */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1FF96AB91BD3127F00FD1B19 /* Build configuration list for PBXAggregateTarget "IOACPIFamily Headers" */;
+			buildPhases = (
+				1FF96ABE1BD3128F00FD1B19 /* CopyFiles */,
+			);
+			dependencies = (
+			);
+			name = "IOACPIFamily Headers";
+			productName = "IOACPIFamily Headers";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1F56E8A61B8A9ECB0095848C /* AppleI386PlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */; };
 		1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */; };
@@ -23,9 +37,6 @@
 		1FA934831B897B4900BD68E3 /* IOACPIPlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347D1B897B4900BD68E3 /* IOACPIPlatformExpert.cpp */; };
 		1FA934841B897B4900BD68E3 /* IOACPIPlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */; };
 		1FA934851B897B4900BD68E3 /* IOACPITypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */; };
-		1FA934871B897D9700BD68E3 /* IOACPIPlatformExpert.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */; };
-		1FA934881B897D9700BD68E3 /* IOACPITypes.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */; };
-		1FA934891B897D9B00BD68E3 /* IOACPIPlatformDevice.h in Install Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
 		1FA934971B897E7600BD68E3 /* c_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934931B897E7600BD68E3 /* c_start.c */; };
 		1FA934981B897E7600BD68E3 /* c_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934941B897E7600BD68E3 /* c_stop.c */; };
 		1FA934AB1B897EB300BD68E3 /* cplus_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934951B897E7600BD68E3 /* cplus_start.c */; };
@@ -34,6 +45,9 @@
 		1FB82F5F1B8C2018004630CF /* c_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934941B897E7600BD68E3 /* c_stop.c */; };
 		1FB82F601B8C201F004630CF /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
 		1FB82F611B8C2090004630CF /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
+		1FF96ABF1BD312AA00FD1B19 /* IOACPIPlatformDevice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
+		1FF96AC01BD312AA00FD1B19 /* IOACPIPlatformExpert.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FA9347E1B897B4900BD68E3 /* IOACPIPlatformExpert.h */; };
+		1FF96AC11BD312AA00FD1B19 /* IOACPITypes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FA9347F1B897B4900BD68E3 /* IOACPITypes.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,20 +135,26 @@
 			remoteGlobalIDString = 1FA934A61B897EAD00BD68E3;
 			remoteInfo = "libkmodc++";
 		};
+		1FF96ABC1BD3128700FD1B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF96AB81BD3127F00FD1B19;
+			remoteInfo = "IOACPIFamily Headers";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1FA934861B897D8000BD68E3 /* Install Headers */ = {
+		1FF96ABE1BD3128F00FD1B19 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 8;
 			dstPath = "$(SYSTEM_LIBRARY_DIR)/Frameworks/Kernel.framework/Versions/A/Headers/IOKit/acpi";
 			dstSubfolderSpec = 0;
 			files = (
-				1FA934891B897D9B00BD68E3 /* IOACPIPlatformDevice.h in Install Headers */,
-				1FA934871B897D9700BD68E3 /* IOACPIPlatformExpert.h in Install Headers */,
-				1FA934881B897D9700BD68E3 /* IOACPITypes.h in Install Headers */,
+				1FF96ABF1BD312AA00FD1B19 /* IOACPIPlatformDevice.h in CopyFiles */,
+				1FF96AC01BD312AA00FD1B19 /* IOACPIPlatformExpert.h in CopyFiles */,
+				1FF96AC11BD312AA00FD1B19 /* IOACPITypes.h in CopyFiles */,
 			);
-			name = "Install Headers";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -419,11 +439,11 @@
 				1FA934681B89798000BD68E3 /* Frameworks */,
 				1FA934691B89798000BD68E3 /* Headers */,
 				1FA9346A1B89798000BD68E3 /* Resources */,
-				1FA934861B897D8000BD68E3 /* Install Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1FF96ABD1BD3128700FD1B19 /* PBXTargetDependency */,
 				1FB82F541B8C1A9D004630CF /* PBXTargetDependency */,
 				1FA934791B897A2500BD68E3 /* PBXTargetDependency */,
 			);
@@ -492,6 +512,9 @@
 					1FA934A61B897EAD00BD68E3 = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					1FF96AB81BD3127F00FD1B19 = {
+						CreatedOnToolsVersion = 7.1;
+					};
 				};
 			};
 			buildConfigurationList = 1FEF420C1B89779C00A5493E /* Build configuration list for PBXProject "PlatformKEXTs" */;
@@ -517,6 +540,7 @@
 				1F56E8A21B8A9ECB0095848C /* AppleI386PlatformExpert */,
 				1FA9348D1B897E1600BD68E3 /* libkmod */,
 				1FA934A61B897EAD00BD68E3 /* libkmodc++ */,
+				1FF96AB81BD3127F00FD1B19 /* IOACPIFamily Headers */,
 			);
 		};
 /* End PBXProject section */
@@ -665,6 +689,11 @@
 			isa = PBXTargetDependency;
 			target = 1FA934A61B897EAD00BD68E3 /* libkmodc++ */;
 			targetProxy = 1FB82F5A1B8C1ABA004630CF /* PBXContainerItemProxy */;
+		};
+		1FF96ABD1BD3128700FD1B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FF96AB81BD3127F00FD1B19 /* IOACPIFamily Headers */;
+			targetProxy = 1FF96ABC1BD3128700FD1B19 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1168,6 +1197,20 @@
 			};
 			name = Release;
 		};
+		1FF96ABA1BD3127F00FD1B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1FF96ABB1BD3127F00FD1B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1221,6 +1264,15 @@
 			buildConfigurations = (
 				1FEF420D1B89779C00A5493E /* Debug */,
 				1FEF420E1B89779C00A5493E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FF96AB91BD3127F00FD1B19 /* Build configuration list for PBXAggregateTarget "IOACPIFamily Headers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FF96ABA1BD3127F00FD1B19 /* Debug */,
+				1FF96ABB1BD3127F00FD1B19 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
