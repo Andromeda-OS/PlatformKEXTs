@@ -20,7 +20,7 @@
  * @APPLE_LICENSE_HEADER_END@
  */
 
-#include <IOKit/acpi/IOACPIPlatformExpert.h>
+#include "IOACPIPlatformExpert.h"
 
 const IORegistryPlane * gIOACPIPlane           = 0;
 const OSSymbol *        gIOACPIHardwareIDKey   = 0;
