@@ -75,21 +75,35 @@ AppleI386PlatformExpertGlobals::~AppleI386PlatformExpertGlobals() {
 OSDefineMetaClassAndStructors(AppleI386PlatformExpert, IOPlatformExpert);
 
 IOService *AppleI386PlatformExpert::probe(IOService *provider, SInt32 *score) {
+    if (score != 0) *score = 10000;
     return this;
 }
 
 bool AppleI386PlatformExpert::init(OSDictionary *properties) {
     if (!super::init()) return false;
-    _interruptControllerName = OSSymbol::withString((OSString *)getProperty("InterruptControllerName"));
+    
+    OSString *name = (OSString *)getProperty("InterruptControllerName");
+    if (name == 0) name = OSString::withCStringNoCopy("AppleI386CPUInterruptController");
+    _interruptControllerName = OSSymbol::withString(name);
+    
     return true;
 }
 
 bool AppleI386PlatformExpert::start(IOService *provider) {
+    kprintf("Inside AppleI386PlatformExpert::start()\n");
     setBootROMType(kBootROMTypeNewWorld);
 
     if (!super::start(provider)) return false;
     PE_halt_restart = handlePEHaltRestart;
     registerService();
+    
+    // Hack: Initialize AppleI386CPU ourself because no one else will.
+    bootCPU = new AppleI386CPU;
+    if (bootCPU == 0) return false;
+    
+    bootCPU->init();
+    bootCPU->attach(0);
+    if (!bootCPU->startCommon()) return false;
 
     return true;
 }

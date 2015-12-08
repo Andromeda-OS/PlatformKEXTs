@@ -25,12 +25,14 @@
 #define _IOKIT_APPLEI386PLATFORM_H
 
 #include <IOKit/IOPlatformExpert.h>
+#include "AppleI386CPU.h"
 
 class AppleI386PlatformExpert : public IOPlatformExpert {
     OSDeclareDefaultStructors(AppleI386PlatformExpert)
 
 private:
     const OSSymbol *_interruptControllerName;
+    AppleI386CPU *bootCPU;
 
     void setupPIC(IOService *nub);
     void setupBIOS(IOService *nub);

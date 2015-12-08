@@ -31,8 +31,12 @@ class AppleI386CPU : public IOCPU {
 
 private:
     IOCPUInterruptController *cpuIC;
+    bool startCommonCompleted;
 
 public:
+    virtual IOService *probe(IOService *provider, SInt32 *score);
+    bool startCommon(void);
+    
     virtual bool start(IOService *provider);
     virtual void initCPU(bool boot);
     virtual void quiesceCPU(void);

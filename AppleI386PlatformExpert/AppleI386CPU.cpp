@@ -26,23 +26,43 @@
 #undef super
 #define super IOCPU
 
-OSDefineMetaClassAndStructors(AppleI386CPU, IOCPU);
+static void _creating_AppleI386CPU(void) {
+    kprintf("Loading AppleI386CPU\n");
+}
 
-bool AppleI386CPU::start(IOService *provider) {
-    if (!super::start(provider)) return false;
+OSDefineMetaClassAndStructorsWithInit(AppleI386CPU, IOCPU, _creating_AppleI386CPU());
 
+IOService *AppleI386CPU::probe(IOService *provider, SInt32 *score) {
+    kprintf("Inside AppleI386CPU::probe()\n");
+    if (score) *score = 10000;
+    return this;
+}
+
+bool AppleI386CPU::startCommon() {
+    if (startCommonCompleted) return true;
+    
     cpuIC = new AppleI386CPUInterruptController;
     if (cpuIC == 0) return false;
+    kprintf("AppleI386CPUInterruptController::initCPUInterruptController()\n");
     if (cpuIC->initCPUInterruptController(1) != kIOReturnSuccess) return false;
-
+    kprintf("AppleI386CPUInterruptController::initCPUInterruptController() - success\n");
+    
     cpuIC->attach(this);
     cpuIC->registerCPUInterruptController();
-
+    
     setCPUState(kIOCPUStateUninitalized);
     initCPU(true);
     registerService();
-
+    
+    startCommonCompleted = true;
     return true;
+}
+
+bool AppleI386CPU::start(IOService *provider) {
+    kprintf("Inside AppleI386CPU::start()\n");
+    if (!super::start(provider)) return false;
+
+    return startCommon();
 }
 
 void AppleI386CPU::initCPU(bool boot) {
