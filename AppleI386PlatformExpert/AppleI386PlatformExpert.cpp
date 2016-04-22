@@ -90,7 +90,6 @@ bool AppleI386PlatformExpert::init(OSDictionary *properties) {
 }
 
 bool AppleI386PlatformExpert::start(IOService *provider) {
-    kprintf("Inside AppleI386PlatformExpert::start()\n");
     setBootROMType(kBootROMTypeNewWorld);
 
     if (!super::start(provider)) return false;
