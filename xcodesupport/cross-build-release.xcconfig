@@ -6,5 +6,5 @@
 //  Copyright © 2015 William Kent. All rights reserved.
 //
 
-XNU_INSTALL_ROOT = "$(DSTROOT)"
+XNU_INSTALL_ROOT = $(DSTROOT)
 #include "cross-build-common.xcconfig"
