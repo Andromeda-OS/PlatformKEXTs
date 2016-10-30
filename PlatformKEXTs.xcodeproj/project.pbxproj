@@ -22,6 +22,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		1F4DBDE41DC5870400A55AF4 /* IOStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDE31DC5870400A55AF4 /* IOStorage.cpp */; };
+		1F4DBDE91DC587A500A55AF4 /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
 		1F56E8A61B8A9ECB0095848C /* AppleI386PlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */; };
 		1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */; };
 		1F56E8BA1B8AB4A20095848C /* AppleI386CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */; };
@@ -50,6 +52,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F4DBDE51DC587A100A55AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA934A61B897EAD00BD68E3;
+			remoteInfo = "libkmodc++";
+		};
+		1F4DBDE71DC587A100A55AF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
 		1F56E8B51B8A9F5A0095848C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
@@ -161,6 +177,9 @@
 
 /* Begin PBXFileReference section */
 		1F31AFD71C8538A70091C31B /* copy-IOACPI-headers.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "copy-IOACPI-headers.sh"; sourceTree = "<group>"; };
+		1F4DBDCF1DC584FC00A55AF4 /* IOStorageFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOStorageFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4DBDD51DC584FC00A55AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F4DBDE31DC5870400A55AF4 /* IOStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOStorage.cpp; sourceTree = "<group>"; };
 		1F56E8A31B8A9ECB0095848C /* AppleI386PlatformExpert.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleI386PlatformExpert.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleI386PlatformExpert.h; sourceTree = "<group>"; };
 		1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleI386PlatformExpert.cpp; sourceTree = "<group>"; };
@@ -193,6 +212,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1F4DBDCB1DC584FC00A55AF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4DBDE91DC587A500A55AF4 /* libkmodc++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F56E89F1B8A9ECB0095848C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,6 +261,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */ = {
+			isa = PBXGroup;
+			children = (
+				1F4DBDE31DC5870400A55AF4 /* IOStorage.cpp */,
+				1F4DBDD51DC584FC00A55AF4 /* Info.plist */,
+			);
+			path = IOStorageFamily;
+			sourceTree = "<group>";
+		};
 		1F56E8A41B8A9ECB0095848C /* AppleI386PlatformExpert */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +356,7 @@
 				1FA9346D1B89798100BD68E3 /* IOACPIFamily */,
 				1F56E8C31B8ABC4B0095848C /* AppleAPIC */,
 				1F56E8A41B8A9ECB0095848C /* AppleI386PlatformExpert */,
+				1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */,
 				1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */,
 				1FA934471B89790200BD68E3 /* References */,
 				1FEF42161B89782000A5493E /* Products */,
@@ -334,6 +371,7 @@
 				1FA934A71B897EAD00BD68E3 /* libkmodc++.a */,
 				1F56E8A31B8A9ECB0095848C /* AppleI386PlatformExpert.kext */,
 				1F56E8C21B8ABC4B0095848C /* AppleAPIC.kext */,
+				1F4DBDCF1DC584FC00A55AF4 /* IOStorageFamily.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +379,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		1F4DBDCC1DC584FC00A55AF4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F56E8A01B8A9ECB0095848C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +433,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1F4DBDCE1DC584FC00A55AF4 /* IOStorageFamily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F4DBDDC1DC584FC00A55AF4 /* Build configuration list for PBXNativeTarget "IOStorageFamily" */;
+			buildPhases = (
+				1F4DBDCA1DC584FC00A55AF4 /* Sources */,
+				1F4DBDCB1DC584FC00A55AF4 /* Frameworks */,
+				1F4DBDCC1DC584FC00A55AF4 /* Headers */,
+				1F4DBDCD1DC584FC00A55AF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4DBDE61DC587A100A55AF4 /* PBXTargetDependency */,
+				1F4DBDE81DC587A100A55AF4 /* PBXTargetDependency */,
+			);
+			name = IOStorageFamily;
+			productName = IOStorageFamily;
+			productReference = 1F4DBDCF1DC584FC00A55AF4 /* IOStorageFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
 		1F56E8A21B8A9ECB0095848C /* AppleI386PlatformExpert */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F56E8B01B8A9ECB0095848C /* Build configuration list for PBXNativeTarget "AppleI386PlatformExpert" */;
@@ -494,6 +559,11 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "William Kent";
 				TargetAttributes = {
+					1F4DBDCE1DC584FC00A55AF4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3P242C9ES5;
+						ProvisioningStyle = Automatic;
+					};
 					1F56E8A21B8A9ECB0095848C = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -538,6 +608,7 @@
 				1FA9348D1B897E1600BD68E3 /* libkmod */,
 				1FA934A61B897EAD00BD68E3 /* libkmodc++ */,
 				1FF96AB81BD3127F00FD1B19 /* IOACPIFamily Headers */,
+				1F4DBDCE1DC584FC00A55AF4 /* IOStorageFamily */,
 			);
 		};
 /* End PBXProject section */
@@ -574,6 +645,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F4DBDCD1DC584FC00A55AF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F56E8A11B8A9ECB0095848C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -616,6 +694,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1F4DBDCA1DC584FC00A55AF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4DBDE41DC5870400A55AF4 /* IOStorage.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1F56E89E1B8A9ECB0095848C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -664,6 +750,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1F4DBDE61DC587A100A55AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA934A61B897EAD00BD68E3 /* libkmodc++ */;
+			targetProxy = 1F4DBDE51DC587A100A55AF4 /* PBXContainerItemProxy */;
+		};
+		1F4DBDE81DC587A100A55AF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1F4DBDE71DC587A100A55AF4 /* PBXContainerItemProxy */;
+		};
 		1F56E8B61B8A9F5A0095848C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = mach_kernel;
@@ -712,6 +808,89 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1F4DBDD61DC584FC00A55AF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3P242C9ES5;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOStorageFamily/Info.plist;
+				INSTALL_PATH = /System/Library/Extensions;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULE_NAME = com.apple.iokit.IOStorageFamily;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.IOStorageFamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1F4DBDD71DC584FC00A55AF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3P242C9ES5;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOStorageFamily/Info.plist;
+				INSTALL_PATH = /System/Library/Extensions;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULE_NAME = com.apple.iokit.IOStorageFamily;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.IOStorageFamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
 		1F56E8AA1B8A9ECB0095848C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */;
@@ -1282,6 +1461,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1F4DBDDC1DC584FC00A55AF4 /* Build configuration list for PBXNativeTarget "IOStorageFamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F4DBDD61DC584FC00A55AF4 /* Debug */,
+				1F4DBDD71DC584FC00A55AF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1F56E8B01B8A9ECB0095848C /* Build configuration list for PBXNativeTarget "AppleI386PlatformExpert" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
