@@ -1081,6 +1081,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
+				);
 				INFOPLIST_FILE = IOStorageFamily/Info.plist;
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1120,6 +1124,10 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
+				);
 				INFOPLIST_FILE = IOStorageFamily/Info.plist;
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -1738,6 +1746,7 @@
 				1F4DBE1D1DC58A2400A55AF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F56E8B01B8A9ECB0095848C /* Build configuration list for PBXNativeTarget "AppleI386PlatformExpert" */ = {
 			isa = XCConfigurationList;

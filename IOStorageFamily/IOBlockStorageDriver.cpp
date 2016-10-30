@@ -34,6 +34,16 @@
 #include <IOKit/storage/IOMedia.h>
 #include <kern/energy_perf.h>
 #include <kern/thread_call.h>
+#include <libkern/OSBase.h>
+
+#ifndef AbsoluteTime_to_scalar
+#define AbsoluteTime_to_scalar(x)	(*(uint64_t *)(x))
+#endif
+#ifndef SUB_ABSOLUTETIME
+#define SUB_ABSOLUTETIME(t1, t2)				\
+	(AbsoluteTime_to_scalar(t1) -=				\
+	 AbsoluteTime_to_scalar(t2))
+#endif
 
 #define super IOStorage
 OSDefineMetaClassAndStructors(IOBlockStorageDriver, IOStorage)
