@@ -142,10 +142,13 @@ bool IOStorage::attach(IOService * provider)
         return false;
     }
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     if ( storageSynchronizeOptions( this ) == false )
     {
         _respondsTo_synchronizeCache = kIOStorageSynchronizeOptionsUnsupported;
     }
+#pragma clang diagnostic pop
 
     if ( _respondsTo_synchronizeCache )
     {
@@ -358,7 +361,10 @@ IOReturn IOStorage::synchronize(IOService *                 client,
     //
 
     /* default the barrier synchronize to full flush */
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     return synchronizeCache( client );
+#pragma clang diagnostic pop
 }
 #endif /* __x86_64__ */
 

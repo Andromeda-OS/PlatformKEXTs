@@ -868,8 +868,8 @@ int dkopen(dev_t dev, int flags, int devtype, proc_t /* proc */)
 
     IOStorageAccess access;
     int             error;
-    IOStorageAccess level;
-    IOStorageAccess levelOut;
+    IOStorageAccess level = 0;
+    IOStorageAccess levelOut = 0;
     IOMedia *       media;
     MinorSlot *     minor;
 
@@ -2567,8 +2567,8 @@ int dkreadwrite(dkr_t dkr, dkrtype_t dkrtype)
 
     IOStorageAttributes  attributes;
     IOMemoryDescriptor * buffer;
-    register UInt64      byteCount;
-    register UInt64      byteStart;
+    UInt64      byteCount;
+    UInt64      byteStart;
     UInt64               mediaSize;
     MinorSlot *          minor;
     IOReturn             status;
