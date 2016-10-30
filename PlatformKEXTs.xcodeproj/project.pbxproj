@@ -24,6 +24,29 @@
 /* Begin PBXBuildFile section */
 		1F4DBDE41DC5870400A55AF4 /* IOStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDE31DC5870400A55AF4 /* IOStorage.cpp */; };
 		1F4DBDE91DC587A500A55AF4 /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
+		1F4DBE031DC588E900A55AF4 /* IOAppleLabelScheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDEC1DC588E900A55AF4 /* IOAppleLabelScheme.cpp */; };
+		1F4DBE041DC588E900A55AF4 /* IOApplePartitionScheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDED1DC588E900A55AF4 /* IOApplePartitionScheme.cpp */; };
+		1F4DBE051DC588E900A55AF4 /* IOApplePartitionScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDEE1DC588E900A55AF4 /* IOApplePartitionScheme.h */; };
+		1F4DBE061DC588E900A55AF4 /* IOBlockStorageDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDEF1DC588E900A55AF4 /* IOBlockStorageDevice.cpp */; };
+		1F4DBE071DC588E900A55AF4 /* IOBlockStorageDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDF01DC588E900A55AF4 /* IOBlockStorageDevice.h */; };
+		1F4DBE081DC588E900A55AF4 /* IOBlockStorageDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDF11DC588E900A55AF4 /* IOBlockStorageDriver.cpp */; };
+		1F4DBE091DC588E900A55AF4 /* IOBlockStorageDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDF21DC588E900A55AF4 /* IOBlockStorageDriver.h */; };
+		1F4DBE0A1DC588E900A55AF4 /* IOFDiskPartitionScheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDF31DC588E900A55AF4 /* IOFDiskPartitionScheme.cpp */; };
+		1F4DBE0B1DC588E900A55AF4 /* IOFDiskPartitionScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDF41DC588E900A55AF4 /* IOFDiskPartitionScheme.h */; };
+		1F4DBE0C1DC588E900A55AF4 /* IOFilterScheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDF51DC588E900A55AF4 /* IOFilterScheme.cpp */; };
+		1F4DBE0D1DC588E900A55AF4 /* IOGUIDPartitionScheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDF61DC588E900A55AF4 /* IOGUIDPartitionScheme.cpp */; };
+		1F4DBE0E1DC588E900A55AF4 /* IOGUIDPartitionScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDF71DC588E900A55AF4 /* IOGUIDPartitionScheme.h */; };
+		1F4DBE0F1DC588E900A55AF4 /* IOMedia.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDF81DC588E900A55AF4 /* IOMedia.cpp */; };
+		1F4DBE101DC588E900A55AF4 /* IOMedia.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDF91DC588E900A55AF4 /* IOMedia.h */; };
+		1F4DBE111DC588E900A55AF4 /* IOMediaBSDClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDFA1DC588E900A55AF4 /* IOMediaBSDClient.cpp */; };
+		1F4DBE121DC588E900A55AF4 /* IOMediaBSDClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDFB1DC588E900A55AF4 /* IOMediaBSDClient.h */; };
+		1F4DBE131DC588E900A55AF4 /* IOPartitionScheme.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F4DBDFC1DC588E900A55AF4 /* IOPartitionScheme.cpp */; };
+		1F4DBE141DC588E900A55AF4 /* IOPartitionScheme.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDFD1DC588E900A55AF4 /* IOPartitionScheme.h */; };
+		1F4DBE151DC588E900A55AF4 /* IOStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDFE1DC588E900A55AF4 /* IOStorage.h */; };
+		1F4DBE161DC588E900A55AF4 /* IOStorageCardCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBDFF1DC588E900A55AF4 /* IOStorageCardCharacteristics.h */; };
+		1F4DBE171DC588E900A55AF4 /* IOStorageControllerCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBE001DC588E900A55AF4 /* IOStorageControllerCharacteristics.h */; };
+		1F4DBE181DC588E900A55AF4 /* IOStorageDeviceCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBE011DC588E900A55AF4 /* IOStorageDeviceCharacteristics.h */; };
+		1F4DBE191DC588E900A55AF4 /* IOStorageProtocolCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F4DBE021DC588E900A55AF4 /* IOStorageProtocolCharacteristics.h */; };
 		1F56E8A61B8A9ECB0095848C /* AppleI386PlatformExpert.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */; };
 		1F56E8A81B8A9ECB0095848C /* AppleI386PlatformExpert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */; };
 		1F56E8BA1B8AB4A20095848C /* AppleI386CPU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F56E8B81B8AB4A20095848C /* AppleI386CPU.cpp */; };
@@ -180,6 +203,31 @@
 		1F4DBDCF1DC584FC00A55AF4 /* IOStorageFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOStorageFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4DBDD51DC584FC00A55AF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F4DBDE31DC5870400A55AF4 /* IOStorage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOStorage.cpp; sourceTree = "<group>"; };
+		1F4DBDEA1DC587F000A55AF4 /* IOAppleLabelScheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOAppleLabelScheme.h; sourceTree = "<group>"; };
+		1F4DBDEB1DC5889500A55AF4 /* IOFilterScheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOFilterScheme.h; sourceTree = "<group>"; };
+		1F4DBDEC1DC588E900A55AF4 /* IOAppleLabelScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOAppleLabelScheme.cpp; sourceTree = "<group>"; };
+		1F4DBDED1DC588E900A55AF4 /* IOApplePartitionScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOApplePartitionScheme.cpp; sourceTree = "<group>"; };
+		1F4DBDEE1DC588E900A55AF4 /* IOApplePartitionScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOApplePartitionScheme.h; sourceTree = "<group>"; };
+		1F4DBDEF1DC588E900A55AF4 /* IOBlockStorageDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOBlockStorageDevice.cpp; sourceTree = "<group>"; };
+		1F4DBDF01DC588E900A55AF4 /* IOBlockStorageDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBlockStorageDevice.h; sourceTree = "<group>"; };
+		1F4DBDF11DC588E900A55AF4 /* IOBlockStorageDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOBlockStorageDriver.cpp; sourceTree = "<group>"; };
+		1F4DBDF21DC588E900A55AF4 /* IOBlockStorageDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOBlockStorageDriver.h; sourceTree = "<group>"; };
+		1F4DBDF31DC588E900A55AF4 /* IOFDiskPartitionScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOFDiskPartitionScheme.cpp; sourceTree = "<group>"; };
+		1F4DBDF41DC588E900A55AF4 /* IOFDiskPartitionScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOFDiskPartitionScheme.h; sourceTree = "<group>"; };
+		1F4DBDF51DC588E900A55AF4 /* IOFilterScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOFilterScheme.cpp; sourceTree = "<group>"; };
+		1F4DBDF61DC588E900A55AF4 /* IOGUIDPartitionScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOGUIDPartitionScheme.cpp; sourceTree = "<group>"; };
+		1F4DBDF71DC588E900A55AF4 /* IOGUIDPartitionScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOGUIDPartitionScheme.h; sourceTree = "<group>"; };
+		1F4DBDF81DC588E900A55AF4 /* IOMedia.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOMedia.cpp; sourceTree = "<group>"; };
+		1F4DBDF91DC588E900A55AF4 /* IOMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMedia.h; sourceTree = "<group>"; };
+		1F4DBDFA1DC588E900A55AF4 /* IOMediaBSDClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOMediaBSDClient.cpp; sourceTree = "<group>"; };
+		1F4DBDFB1DC588E900A55AF4 /* IOMediaBSDClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOMediaBSDClient.h; sourceTree = "<group>"; };
+		1F4DBDFC1DC588E900A55AF4 /* IOPartitionScheme.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPartitionScheme.cpp; sourceTree = "<group>"; };
+		1F4DBDFD1DC588E900A55AF4 /* IOPartitionScheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPartitionScheme.h; sourceTree = "<group>"; };
+		1F4DBDFE1DC588E900A55AF4 /* IOStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorage.h; sourceTree = "<group>"; };
+		1F4DBDFF1DC588E900A55AF4 /* IOStorageCardCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageCardCharacteristics.h; sourceTree = "<group>"; };
+		1F4DBE001DC588E900A55AF4 /* IOStorageControllerCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageControllerCharacteristics.h; sourceTree = "<group>"; };
+		1F4DBE011DC588E900A55AF4 /* IOStorageDeviceCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageDeviceCharacteristics.h; sourceTree = "<group>"; };
+		1F4DBE021DC588E900A55AF4 /* IOStorageProtocolCharacteristics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOStorageProtocolCharacteristics.h; sourceTree = "<group>"; };
 		1F56E8A31B8A9ECB0095848C /* AppleI386PlatformExpert.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleI386PlatformExpert.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F56E8A51B8A9ECB0095848C /* AppleI386PlatformExpert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleI386PlatformExpert.h; sourceTree = "<group>"; };
 		1F56E8A71B8A9ECB0095848C /* AppleI386PlatformExpert.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = AppleI386PlatformExpert.cpp; sourceTree = "<group>"; };
@@ -264,7 +312,32 @@
 		1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */ = {
 			isa = PBXGroup;
 			children = (
+				1F4DBDEC1DC588E900A55AF4 /* IOAppleLabelScheme.cpp */,
+				1F4DBDEA1DC587F000A55AF4 /* IOAppleLabelScheme.h */,
+				1F4DBDED1DC588E900A55AF4 /* IOApplePartitionScheme.cpp */,
+				1F4DBDEE1DC588E900A55AF4 /* IOApplePartitionScheme.h */,
+				1F4DBDEF1DC588E900A55AF4 /* IOBlockStorageDevice.cpp */,
+				1F4DBDF01DC588E900A55AF4 /* IOBlockStorageDevice.h */,
+				1F4DBDF11DC588E900A55AF4 /* IOBlockStorageDriver.cpp */,
+				1F4DBDF21DC588E900A55AF4 /* IOBlockStorageDriver.h */,
+				1F4DBDF31DC588E900A55AF4 /* IOFDiskPartitionScheme.cpp */,
+				1F4DBDF41DC588E900A55AF4 /* IOFDiskPartitionScheme.h */,
+				1F4DBDF51DC588E900A55AF4 /* IOFilterScheme.cpp */,
+				1F4DBDEB1DC5889500A55AF4 /* IOFilterScheme.h */,
+				1F4DBDF61DC588E900A55AF4 /* IOGUIDPartitionScheme.cpp */,
+				1F4DBDF71DC588E900A55AF4 /* IOGUIDPartitionScheme.h */,
+				1F4DBDF81DC588E900A55AF4 /* IOMedia.cpp */,
+				1F4DBDF91DC588E900A55AF4 /* IOMedia.h */,
+				1F4DBDFA1DC588E900A55AF4 /* IOMediaBSDClient.cpp */,
+				1F4DBDFB1DC588E900A55AF4 /* IOMediaBSDClient.h */,
+				1F4DBDFC1DC588E900A55AF4 /* IOPartitionScheme.cpp */,
+				1F4DBDFD1DC588E900A55AF4 /* IOPartitionScheme.h */,
+				1F4DBDFF1DC588E900A55AF4 /* IOStorageCardCharacteristics.h */,
+				1F4DBE001DC588E900A55AF4 /* IOStorageControllerCharacteristics.h */,
+				1F4DBE011DC588E900A55AF4 /* IOStorageDeviceCharacteristics.h */,
+				1F4DBE021DC588E900A55AF4 /* IOStorageProtocolCharacteristics.h */,
 				1F4DBDE31DC5870400A55AF4 /* IOStorage.cpp */,
+				1F4DBDFE1DC588E900A55AF4 /* IOStorage.h */,
 				1F4DBDD51DC584FC00A55AF4 /* Info.plist */,
 			);
 			path = IOStorageFamily;
@@ -383,6 +456,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4DBE141DC588E900A55AF4 /* IOPartitionScheme.h in Headers */,
+				1F4DBE161DC588E900A55AF4 /* IOStorageCardCharacteristics.h in Headers */,
+				1F4DBE071DC588E900A55AF4 /* IOBlockStorageDevice.h in Headers */,
+				1F4DBE101DC588E900A55AF4 /* IOMedia.h in Headers */,
+				1F4DBE121DC588E900A55AF4 /* IOMediaBSDClient.h in Headers */,
+				1F4DBE051DC588E900A55AF4 /* IOApplePartitionScheme.h in Headers */,
+				1F4DBE171DC588E900A55AF4 /* IOStorageControllerCharacteristics.h in Headers */,
+				1F4DBE151DC588E900A55AF4 /* IOStorage.h in Headers */,
+				1F4DBE0E1DC588E900A55AF4 /* IOGUIDPartitionScheme.h in Headers */,
+				1F4DBE0B1DC588E900A55AF4 /* IOFDiskPartitionScheme.h in Headers */,
+				1F4DBE181DC588E900A55AF4 /* IOStorageDeviceCharacteristics.h in Headers */,
+				1F4DBE091DC588E900A55AF4 /* IOBlockStorageDriver.h in Headers */,
+				1F4DBE191DC588E900A55AF4 /* IOStorageProtocolCharacteristics.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +784,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F4DBE0F1DC588E900A55AF4 /* IOMedia.cpp in Sources */,
+				1F4DBE081DC588E900A55AF4 /* IOBlockStorageDriver.cpp in Sources */,
+				1F4DBE131DC588E900A55AF4 /* IOPartitionScheme.cpp in Sources */,
+				1F4DBE031DC588E900A55AF4 /* IOAppleLabelScheme.cpp in Sources */,
+				1F4DBE0D1DC588E900A55AF4 /* IOGUIDPartitionScheme.cpp in Sources */,
+				1F4DBE0C1DC588E900A55AF4 /* IOFilterScheme.cpp in Sources */,
+				1F4DBE111DC588E900A55AF4 /* IOMediaBSDClient.cpp in Sources */,
+				1F4DBE061DC588E900A55AF4 /* IOBlockStorageDevice.cpp in Sources */,
+				1F4DBE041DC588E900A55AF4 /* IOApplePartitionScheme.cpp in Sources */,
 				1F4DBDE41DC5870400A55AF4 /* IOStorage.cpp in Sources */,
+				1F4DBE0A1DC588E900A55AF4 /* IOFDiskPartitionScheme.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -819,7 +915,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -863,7 +958,6 @@
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
