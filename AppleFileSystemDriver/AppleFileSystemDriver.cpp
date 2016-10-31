@@ -242,7 +242,7 @@ AppleFileSystemDriver::mediaNotificationHandler(
 												IONotifier * notifier)
 {
     AppleFileSystemDriver *    fs;
-    IOMedia *                  media;
+    IOMedia *                  media = nullptr;
     IOReturn                   status         = kIOReturnError;
     OSString *                 contentHint;
     const char *               contentStr;
@@ -313,11 +313,9 @@ AppleFileSystemDriver::mediaNotificationHandler(
         }
 #endif
         
-        if (fs->_uuid) {
-            if ( uuid_compare(uuid, fs->_uuid) == 0 ) {
-                VERBOSE_LOG("  UUID matched on volume %s\n", media->getName());
-                matched = true;
-            }
+        if ( uuid_compare(uuid, fs->_uuid) == 0 ) {
+            VERBOSE_LOG("  UUID matched on volume %s\n", media->getName());
+            matched = true;
         }
 		
     } while (false);
