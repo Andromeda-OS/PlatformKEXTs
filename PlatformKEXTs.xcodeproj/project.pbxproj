@@ -1532,6 +1532,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.AppleFileSystemDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wno-inconsistent-missing-override";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -1574,6 +1575,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.AppleFileSystemDriver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wno-inconsistent-missing-override";
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
