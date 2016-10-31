@@ -5,13 +5,13 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
+	<string>AppleFileSystemDriver</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>AppleFileSystemDriver</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>${MODULE_NAME}</string>
+	<string>com.apple.driver.AppleFileSystemDriver</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundlePackageType</key>
@@ -27,7 +27,7 @@
 		<key>AppleFileSystemDriver</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>${MODULE_NAME}</string>
+			<string>com.apple.driver.AppleFileSystemDriver</string>
 			<key>IOClass</key>
 			<string>AppleFileSystemDriver</string>
 			<key>IOMatchCategory</key>
@@ -87,7 +87,7 @@
 		</dict>
 	</dict>
 	<key>OSBundleRequired</key>
-	<string>Local-Root</string>
+	<string>Safe Boot</string>
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>com.apple.kpi.libkern</key>
