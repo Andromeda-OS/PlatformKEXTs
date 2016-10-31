@@ -99,6 +99,10 @@
 		1F56E8D21B8ABC940095848C /* Apple8259PIC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8CF1B8ABC940095848C /* Apple8259PIC.h */; };
 		1F56E8D31B8ABC940095848C /* AppleAPIC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8D01B8ABC940095848C /* AppleAPIC.h */; };
 		1F56E8D41B8ABC940095848C /* PICShared.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F56E8D11B8ABC940095848C /* PICShared.h */; };
+		1F994E981DC6D48B00BB565B /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
+		1F994E9B1DC6D49800BB565B /* AppleFileSystemDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F994E991DC6D49800BB565B /* AppleFileSystemDriver.h */; };
+		1F994E9E1DC6D4A900BB565B /* AppleFileSystemDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F994E9D1DC6D4A900BB565B /* AppleFileSystemDriver.cpp */; };
+		1F994EA21DC6D52700BB565B /* uuid-namespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F994EA11DC6D52700BB565B /* uuid-namespace.h */; };
 		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
 		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
 		1FA934821B897B4900BD68E3 /* IOACPIPlatformDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
@@ -167,6 +171,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
 			remoteInfo = mach_kernel;
+		};
+		1F994E941DC6D48100BB565B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FA934A61B897EAD00BD68E3;
+			remoteInfo = "libkmodc++";
+		};
+		1F994E961DC6D48400BB565B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
+		1F994E9F1DC6D4F600BB565B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FEF42091B89779C00A5493E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F4DBE1A1DC58A2400A55AF4;
+			remoteInfo = "IOStorageFamily Headers";
 		};
 		1FA934501B89790900BD68E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -344,6 +369,11 @@
 		1F56E8D01B8ABC940095848C /* AppleAPIC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleAPIC.h; sourceTree = "<group>"; };
 		1F56E8D11B8ABC940095848C /* PICShared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PICShared.h; sourceTree = "<group>"; };
 		1F9409841B8980AB00F1DB6F /* cross-build-common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "cross-build-common.xcconfig"; sourceTree = "<group>"; };
+		1F994E861DC6D40500BB565B /* AppleFileSystemDriver.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleFileSystemDriver.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F994E8C1DC6D40500BB565B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F994E991DC6D49800BB565B /* AppleFileSystemDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFileSystemDriver.h; sourceTree = "<group>"; };
+		1F994E9D1DC6D4A900BB565B /* AppleFileSystemDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppleFileSystemDriver.cpp; sourceTree = "<group>"; };
+		1F994EA11DC6D52700BB565B /* uuid-namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uuid-namespace.h"; sourceTree = "<group>"; };
 		1FA934481B89790900BD68E3 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../Kernel/Kernel.xcodeproj; sourceTree = "<group>"; };
 		1FA9346C1B89798000BD68E3 /* IOACPIFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOACPIFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA934721B89798100BD68E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -384,6 +414,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FB82F591B8C1AB3004630CF /* libkmodc++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F994E821DC6D40500BB565B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F994E981DC6D48B00BB565B /* libkmodc++.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,6 +508,17 @@
 			path = AppleAPIC;
 			sourceTree = "<group>";
 		};
+		1F994E871DC6D40500BB565B /* AppleFileSystemDriver */ = {
+			isa = PBXGroup;
+			children = (
+				1F994EA11DC6D52700BB565B /* uuid-namespace.h */,
+				1F994E991DC6D49800BB565B /* AppleFileSystemDriver.h */,
+				1F994E9D1DC6D4A900BB565B /* AppleFileSystemDriver.cpp */,
+				1F994E8C1DC6D40500BB565B /* Info.plist */,
+			);
+			path = AppleFileSystemDriver;
+			sourceTree = "<group>";
+		};
 		1FA934471B89790200BD68E3 /* References */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +585,7 @@
 				1F56E8A41B8A9ECB0095848C /* AppleI386PlatformExpert */,
 				1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */,
 				1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */,
+				1F994E871DC6D40500BB565B /* AppleFileSystemDriver */,
 				1FA934471B89790200BD68E3 /* References */,
 				1FEF42161B89782000A5493E /* Products */,
 			);
@@ -550,6 +600,7 @@
 				1F56E8A31B8A9ECB0095848C /* AppleI386PlatformExpert.kext */,
 				1F56E8C21B8ABC4B0095848C /* AppleAPIC.kext */,
 				1F4DBDCF1DC584FC00A55AF4 /* IOStorageFamily.kext */,
+				1F994E861DC6D40500BB565B /* AppleFileSystemDriver.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -593,6 +644,15 @@
 				1F56E8D31B8ABC940095848C /* AppleAPIC.h in Headers */,
 				1F56E8D21B8ABC940095848C /* Apple8259PIC.h in Headers */,
 				1F56E8D41B8ABC940095848C /* PICShared.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F994E831DC6D40500BB565B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F994EA21DC6D52700BB565B /* uuid-namespace.h in Headers */,
+				1F994E9B1DC6D49800BB565B /* AppleFileSystemDriver.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,6 +745,27 @@
 			productReference = 1F56E8C21B8ABC4B0095848C /* AppleAPIC.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
+		1F994E851DC6D40500BB565B /* AppleFileSystemDriver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F994E931DC6D40500BB565B /* Build configuration list for PBXNativeTarget "AppleFileSystemDriver" */;
+			buildPhases = (
+				1F994E811DC6D40500BB565B /* Sources */,
+				1F994E821DC6D40500BB565B /* Frameworks */,
+				1F994E831DC6D40500BB565B /* Headers */,
+				1F994E841DC6D40500BB565B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F994EA01DC6D4F600BB565B /* PBXTargetDependency */,
+				1F994E971DC6D48400BB565B /* PBXTargetDependency */,
+				1F994E951DC6D48100BB565B /* PBXTargetDependency */,
+			);
+			name = AppleFileSystemDriver;
+			productName = AppleFileSystemDriver;
+			productReference = 1F994E861DC6D40500BB565B /* AppleFileSystemDriver.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
 		1FA9346B1B89798000BD68E3 /* IOACPIFamily */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA934731B89798100BD68E3 /* Build configuration list for PBXNativeTarget "IOACPIFamily" */;
@@ -767,6 +848,11 @@
 					1F56E8C11B8ABC4B0095848C = {
 						CreatedOnToolsVersion = 7.0;
 					};
+					1F994E851DC6D40500BB565B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3P242C9ES5;
+						ProvisioningStyle = Automatic;
+					};
 					1FA9346B1B89798000BD68E3 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -807,6 +893,7 @@
 				1FF96AB81BD3127F00FD1B19 /* IOACPIFamily Headers */,
 				1F4DBDCE1DC584FC00A55AF4 /* IOStorageFamily */,
 				1F4DBE1A1DC58A2400A55AF4 /* IOStorageFamily Headers */,
+				1F994E851DC6D40500BB565B /* AppleFileSystemDriver */,
 			);
 		};
 /* End PBXProject section */
@@ -858,6 +945,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F56E8C01B8ABC4B0095848C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F994E841DC6D40500BB565B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -957,6 +1051,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F994E811DC6D40500BB565B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F994E9E1DC6D4A900BB565B /* AppleFileSystemDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1FA934671B89798000BD68E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1022,6 +1124,21 @@
 			isa = PBXTargetDependency;
 			name = mach_kernel;
 			targetProxy = 1F9409891B8983AA00F1DB6F /* PBXContainerItemProxy */;
+		};
+		1F994E951DC6D48100BB565B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FA934A61B897EAD00BD68E3 /* libkmodc++ */;
+			targetProxy = 1F994E941DC6D48100BB565B /* PBXContainerItemProxy */;
+		};
+		1F994E971DC6D48400BB565B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1F994E961DC6D48400BB565B /* PBXContainerItemProxy */;
+		};
+		1F994EA01DC6D4F600BB565B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F4DBE1A1DC58A2400A55AF4 /* IOStorageFamily Headers */;
+			targetProxy = 1F994E9F1DC6D4F600BB565B /* PBXContainerItemProxy */;
 		};
 		1FA934791B897A2500BD68E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1368,6 +1485,95 @@
 					"-Wno-inconsistent-missing-override",
 					"-Wno-deprecated-register",
 				);
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		1F994E8D1DC6D40500BB565B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3P242C9ES5;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
+				);
+				INFOPLIST_FILE = AppleFileSystemDriver/Info.plist;
+				INSTALL_PATH = /System/Library/Extensions;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULE_NAME = com.apple.driver.AppleFileSystemDriver;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.AppleFileSystemDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1F994E8E1DC6D40500BB565B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3P242C9ES5;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
+				);
+				INFOPLIST_FILE = AppleFileSystemDriver/Info.plist;
+				INSTALL_PATH = /System/Library/Extensions;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULE_NAME = com.apple.driver.AppleFileSystemDriver;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.AppleFileSystemDriver;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -1765,6 +1971,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1F994E931DC6D40500BB565B /* Build configuration list for PBXNativeTarget "AppleFileSystemDriver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F994E8D1DC6D40500BB565B /* Debug */,
+				1F994E8E1DC6D40500BB565B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1FA934731B89798100BD68E3 /* Build configuration list for PBXNativeTarget "IOACPIFamily" */ = {
 			isa = XCConfigurationList;
