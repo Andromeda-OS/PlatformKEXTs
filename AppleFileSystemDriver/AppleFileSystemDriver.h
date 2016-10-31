@@ -47,9 +47,9 @@ protected:
 
 public:
 
-    virtual bool start(IOService * provider);
+    virtual bool start(IOService * provider) override;
 
-    virtual void free();
+    virtual void free() override;
     
 private:
 
