@@ -584,8 +584,8 @@
 				1F56E8C31B8ABC4B0095848C /* AppleAPIC */,
 				1F56E8A41B8A9ECB0095848C /* AppleI386PlatformExpert */,
 				1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */,
-				1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */,
 				1F994E871DC6D40500BB565B /* AppleFileSystemDriver */,
+				1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */,
 				1FA934471B89790200BD68E3 /* References */,
 				1FEF42161B89782000A5493E /* Products */,
 			);
