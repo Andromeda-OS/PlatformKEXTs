@@ -112,6 +112,9 @@
 		1FA934971B897E7600BD68E3 /* c_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934931B897E7600BD68E3 /* c_start.c */; };
 		1FA934981B897E7600BD68E3 /* c_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934941B897E7600BD68E3 /* c_stop.c */; };
 		1FA934AB1B897EB300BD68E3 /* cplus_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934951B897E7600BD68E3 /* cplus_start.c */; };
+		1FAF1BF51DE7E75200E1B349 /* External.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF1BF21DE7E75200E1B349 /* External.iconset */; };
+		1FAF1BF61DE7E75200E1B349 /* Internal.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF1BF31DE7E75200E1B349 /* Internal.iconset */; };
+		1FAF1BF71DE7E75200E1B349 /* Removable.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 1FAF1BF41DE7E75200E1B349 /* Removable.iconset */; };
 		1FB82F591B8C1AB3004630CF /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA934A71B897EAD00BD68E3 /* libkmodc++.a */; };
 		1FB82F5E1B8C2018004630CF /* c_start.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934931B897E7600BD68E3 /* c_start.c */; };
 		1FB82F5F1B8C2018004630CF /* c_stop.c in Sources */ = {isa = PBXBuildFile; fileRef = 1FA934941B897E7600BD68E3 /* c_stop.c */; };
@@ -390,6 +393,9 @@
 		1FA934A71B897EAD00BD68E3 /* libkmodc++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libkmodc++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "cross-build-debug.xcconfig"; sourceTree = "<group>"; };
 		1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "cross-build-release.xcconfig"; sourceTree = "<group>"; };
+		1FAF1BF21DE7E75200E1B349 /* External.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = External.iconset; sourceTree = "<group>"; };
+		1FAF1BF31DE7E75200E1B349 /* Internal.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Internal.iconset; sourceTree = "<group>"; };
+		1FAF1BF41DE7E75200E1B349 /* Removable.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = Removable.iconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +459,7 @@
 		1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */ = {
 			isa = PBXGroup;
 			children = (
+				1FAF1BED1DE7E68E00E1B349 /* IconResources */,
 				1F4DBDEC1DC588E900A55AF4 /* IOAppleLabelScheme.cpp */,
 				1F4DBDEA1DC587F000A55AF4 /* IOAppleLabelScheme.h */,
 				1F4DBDED1DC588E900A55AF4 /* IOApplePartitionScheme.cpp */,
@@ -574,6 +581,16 @@
 				1FA934951B897E7600BD68E3 /* cplus_start.c */,
 			);
 			path = libkmod;
+			sourceTree = "<group>";
+		};
+		1FAF1BED1DE7E68E00E1B349 /* IconResources */ = {
+			isa = PBXGroup;
+			children = (
+				1FAF1BF21DE7E75200E1B349 /* External.iconset */,
+				1FAF1BF31DE7E75200E1B349 /* Internal.iconset */,
+				1FAF1BF41DE7E75200E1B349 /* Removable.iconset */,
+			);
+			path = IconResources;
 			sourceTree = "<group>";
 		};
 		1FEF42081B89779C00A5493E = {
@@ -934,6 +951,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FAF1BF61DE7E75200E1B349 /* Internal.iconset in Resources */,
+				1FAF1BF71DE7E75200E1B349 /* Removable.iconset in Resources */,
+				1FAF1BF51DE7E75200E1B349 /* External.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
