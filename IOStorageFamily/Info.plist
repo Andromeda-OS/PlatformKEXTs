@@ -209,6 +209,6 @@
 		<string>8.0</string>
 	</dict>
 	<key>OSBundleRequired</key>
-	<string>Local-Root</string>
+	<string>Safe Boot</string>
 </dict>
 </plist>
