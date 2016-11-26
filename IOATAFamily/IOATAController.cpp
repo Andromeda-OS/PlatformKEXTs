@@ -2379,7 +2379,7 @@ ______________________________________________________________________________*/
 IOReturn 
 IOATAController::txDataIn (IOLogicalAddress buf, IOByteCount length)
 {
-	register UInt16		*buf16 = (UInt16*)buf;
+	 UInt16		*buf16 = (UInt16*)buf;
 
 	// on reads, we expect an interrupt after we send the data except on the last block.
 	// in the case of the last block, we will clear this bit when we return to the 
@@ -2455,7 +2455,7 @@ ______________________________________________________________________________*/
 IOReturn 
 IOATAController::txDataOut(IOLogicalAddress buf, IOByteCount length)
 {
-	register UInt16		*buf16 = (UInt16*)buf;
+	UInt16		*buf16 = (UInt16*)buf;
 
 	while (length >= 32)						// write in groups of 16 words at a time
 	{
