@@ -987,7 +987,7 @@
 		1FEF42091B89779C00A5493E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "William Kent";
 				TargetAttributes = {
 					1F4DBDCE1DC584FC00A55AF4 = {
@@ -2316,6 +2316,7 @@
 				1FAA5D891DE91B4900DFA53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FEF420C1B89779C00A5493E /* Build configuration list for PBXProject "PlatformKEXTs" */ = {
 			isa = XCConfigurationList;
