@@ -2123,6 +2123,10 @@
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
+				);
 				INFOPLIST_FILE = IOATAFamily/Info.plist;
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
@@ -2162,6 +2166,10 @@
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				HEADER_SEARCH_PATHS = (
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/PrivateHeaders",
+					"$(XNU_INSTALL_ROOT)/System/Library/Frameworks/Kernel.framework/Headers",
+				);
 				INFOPLIST_FILE = IOATAFamily/Info.plist;
 				INSTALL_PATH = /System/Library/Extensions;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
