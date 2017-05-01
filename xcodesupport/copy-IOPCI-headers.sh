@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -e
-INPUT_DIR=${SRCROOT}/IOPCI/Headers/pci
+INPUT_DIR=${SRCROOT}/IOPCIFamily/Headers/pci
 
 function InstallHeaders {
 	local DIR=$1
