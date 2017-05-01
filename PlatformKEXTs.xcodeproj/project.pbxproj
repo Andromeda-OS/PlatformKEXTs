@@ -463,6 +463,10 @@
 		1FA5140F1EB6B68100A8D52E /* IOPCIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPCIDevice.h; sourceTree = "<group>"; };
 		1FA514101EB6B68100A8D52E /* IOPCIPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPCIPrivate.h; sourceTree = "<group>"; };
 		1FA514181EB6B73800A8D52E /* copy-IOPCI-headers.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "copy-IOPCI-headers.sh"; sourceTree = "<group>"; };
+		1FA5141C1EB6B8FB00A8D52E /* balloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = balloc.c; sourceTree = "<group>"; };
+		1FA5141D1EB6B8FB00A8D52E /* dmar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dmar.h; sourceTree = "<group>"; };
+		1FA514251EB6B8FB00A8D52E /* rballoc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rballoc.c; sourceTree = "<group>"; };
+		1FA514261EB6B8FB00A8D52E /* vtd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vtd.c; sourceTree = "<group>"; };
 		1FA934481B89790900BD68E3 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../Kernel/Kernel.xcodeproj; sourceTree = "<group>"; };
 		1FA9346C1B89798000BD68E3 /* IOACPIFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOACPIFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA934721B89798100BD68E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -662,6 +666,10 @@
 				1FA514001EB6B64E00A8D52E /* IOPCIDeviceMappedIO.cpp */,
 				1FA514011EB6B64E00A8D52E /* IOPCIMessagedInterruptController.cpp */,
 				1FA514021EB6B64E00A8D52E /* IOPCIRange.cpp */,
+				1FA5141C1EB6B8FB00A8D52E /* balloc.c */,
+				1FA514251EB6B8FB00A8D52E /* rballoc.c */,
+				1FA514261EB6B8FB00A8D52E /* vtd.c */,
+				1FA5141D1EB6B8FB00A8D52E /* dmar.h */,
 				1FA513F81EB6B5EF00A8D52E /* Info.plist */,
 			);
 			path = IOPCIFamily;
