@@ -2583,6 +2583,7 @@
 				1FA513FB1EB6B5EF00A8D52E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA934731B89798100BD68E3 /* Build configuration list for PBXNativeTarget "IOACPIFamily" */ = {
 			isa = XCConfigurationList;
