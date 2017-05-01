@@ -2017,9 +2017,9 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
 				INFOPLIST_FILE = IOPCIFamily/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULE_NAME = com.sunburstapps.IOPCIFamily;
@@ -2028,7 +2028,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOPCIFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				WARNING_CFLAGS = "-Wno-inconsistent-missing-override";
+				WARNING_CFLAGS = (
+					"-Wno-inconsistent-missing-override",
+					"-Wno-format",
+					"-Wno-format-security",
+					"-Wno-constant-conversion",
+				);
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Debug;
@@ -2056,9 +2061,9 @@
 				DEVELOPMENT_TEAM = 3P242C9ES5;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = NO;
 				INFOPLIST_FILE = IOPCIFamily/Info.plist;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MODULE_NAME = com.sunburstapps.IOPCIFamily;
@@ -2067,7 +2072,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOPCIFamily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				WARNING_CFLAGS = "-Wno-inconsistent-missing-override";
+				WARNING_CFLAGS = (
+					"-Wno-inconsistent-missing-override",
+					"-Wno-format",
+					"-Wno-format-security",
+					"-Wno-constant-conversion",
+				);
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
