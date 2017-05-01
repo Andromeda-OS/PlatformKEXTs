@@ -105,6 +105,18 @@
 		1F994E9B1DC6D49800BB565B /* AppleFileSystemDriver.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F994E991DC6D49800BB565B /* AppleFileSystemDriver.h */; };
 		1F994E9E1DC6D4A900BB565B /* AppleFileSystemDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F994E9D1DC6D4A900BB565B /* AppleFileSystemDriver.cpp */; };
 		1F994EA21DC6D52700BB565B /* uuid-namespace.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F994EA11DC6D52700BB565B /* uuid-namespace.h */; };
+		1FA514031EB6B64E00A8D52E /* IOPCIBridge.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA513FC1EB6B64E00A8D52E /* IOPCIBridge.cpp */; };
+		1FA514041EB6B64E00A8D52E /* IOPCIConfigurator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA513FD1EB6B64E00A8D52E /* IOPCIConfigurator.cpp */; };
+		1FA514051EB6B64E00A8D52E /* IOPCIDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA513FE1EB6B64E00A8D52E /* IOPCIDevice.cpp */; };
+		1FA514061EB6B64E00A8D52E /* IOPCIDeviceI386.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA513FF1EB6B64E00A8D52E /* IOPCIDeviceI386.cpp */; };
+		1FA514071EB6B64E00A8D52E /* IOPCIDeviceMappedIO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA514001EB6B64E00A8D52E /* IOPCIDeviceMappedIO.cpp */; };
+		1FA514081EB6B64E00A8D52E /* IOPCIMessagedInterruptController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA514011EB6B64E00A8D52E /* IOPCIMessagedInterruptController.cpp */; };
+		1FA514091EB6B64E00A8D52E /* IOPCIRange.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA514021EB6B64E00A8D52E /* IOPCIRange.cpp */; };
+		1FA514111EB6B68100A8D52E /* IOAGPDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5140C1EB6B68100A8D52E /* IOAGPDevice.h */; };
+		1FA514121EB6B68100A8D52E /* IOPCIBridge.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5140D1EB6B68100A8D52E /* IOPCIBridge.h */; };
+		1FA514131EB6B68100A8D52E /* IOPCIConfigurator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5140E1EB6B68100A8D52E /* IOPCIConfigurator.h */; };
+		1FA514141EB6B68100A8D52E /* IOPCIDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA5140F1EB6B68100A8D52E /* IOPCIDevice.h */; };
+		1FA514151EB6B68100A8D52E /* IOPCIPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA514101EB6B68100A8D52E /* IOPCIPrivate.h */; };
 		1FA934801B897B4900BD68E3 /* IOACPIInlineIO.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347A1B897B4900BD68E3 /* IOACPIInlineIO.h */; };
 		1FA934811B897B4900BD68E3 /* IOACPIPlatformDevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA9347B1B897B4900BD68E3 /* IOACPIPlatformDevice.cpp */; };
 		1FA934821B897B4900BD68E3 /* IOACPIPlatformDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA9347C1B897B4900BD68E3 /* IOACPIPlatformDevice.h */; };
@@ -228,6 +240,13 @@
 			remoteInfo = mach_kernel;
 		};
 		1FA513E91EB6B23100A8D52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
+		1FA514191EB6B7EA00A8D52E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
 			proxyType = 1;
@@ -429,6 +448,21 @@
 		1F994E991DC6D49800BB565B /* AppleFileSystemDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleFileSystemDriver.h; sourceTree = "<group>"; };
 		1F994E9D1DC6D4A900BB565B /* AppleFileSystemDriver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AppleFileSystemDriver.cpp; sourceTree = "<group>"; };
 		1F994EA11DC6D52700BB565B /* uuid-namespace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "uuid-namespace.h"; sourceTree = "<group>"; };
+		1FA513F21EB6B5EF00A8D52E /* IOPCIFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOPCIFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FA513F81EB6B5EF00A8D52E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FA513FC1EB6B64E00A8D52E /* IOPCIBridge.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIBridge.cpp; sourceTree = "<group>"; };
+		1FA513FD1EB6B64E00A8D52E /* IOPCIConfigurator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIConfigurator.cpp; sourceTree = "<group>"; };
+		1FA513FE1EB6B64E00A8D52E /* IOPCIDevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIDevice.cpp; sourceTree = "<group>"; };
+		1FA513FF1EB6B64E00A8D52E /* IOPCIDeviceI386.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIDeviceI386.cpp; sourceTree = "<group>"; };
+		1FA514001EB6B64E00A8D52E /* IOPCIDeviceMappedIO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIDeviceMappedIO.cpp; sourceTree = "<group>"; };
+		1FA514011EB6B64E00A8D52E /* IOPCIMessagedInterruptController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIMessagedInterruptController.cpp; sourceTree = "<group>"; };
+		1FA514021EB6B64E00A8D52E /* IOPCIRange.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IOPCIRange.cpp; sourceTree = "<group>"; };
+		1FA5140C1EB6B68100A8D52E /* IOAGPDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOAGPDevice.h; sourceTree = "<group>"; };
+		1FA5140D1EB6B68100A8D52E /* IOPCIBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPCIBridge.h; sourceTree = "<group>"; };
+		1FA5140E1EB6B68100A8D52E /* IOPCIConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPCIConfigurator.h; sourceTree = "<group>"; };
+		1FA5140F1EB6B68100A8D52E /* IOPCIDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPCIDevice.h; sourceTree = "<group>"; };
+		1FA514101EB6B68100A8D52E /* IOPCIPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPCIPrivate.h; sourceTree = "<group>"; };
+		1FA514181EB6B73800A8D52E /* copy-IOPCI-headers.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "copy-IOPCI-headers.sh"; sourceTree = "<group>"; };
 		1FA934481B89790900BD68E3 /* Kernel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kernel.xcodeproj; path = ../Kernel/Kernel.xcodeproj; sourceTree = "<group>"; };
 		1FA9346C1B89798000BD68E3 /* IOACPIFamily.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOACPIFamily.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA934721B89798100BD68E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -505,6 +539,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F994E981DC6D48B00BB565B /* libkmodc++.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA513EE1EB6B5EF00A8D52E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +651,42 @@
 			path = AppleFileSystemDriver;
 			sourceTree = "<group>";
 		};
+		1FA513F31EB6B5EF00A8D52E /* IOPCIFamily */ = {
+			isa = PBXGroup;
+			children = (
+				1FA5140A1EB6B68100A8D52E /* Headers */,
+				1FA513FC1EB6B64E00A8D52E /* IOPCIBridge.cpp */,
+				1FA513FD1EB6B64E00A8D52E /* IOPCIConfigurator.cpp */,
+				1FA513FE1EB6B64E00A8D52E /* IOPCIDevice.cpp */,
+				1FA513FF1EB6B64E00A8D52E /* IOPCIDeviceI386.cpp */,
+				1FA514001EB6B64E00A8D52E /* IOPCIDeviceMappedIO.cpp */,
+				1FA514011EB6B64E00A8D52E /* IOPCIMessagedInterruptController.cpp */,
+				1FA514021EB6B64E00A8D52E /* IOPCIRange.cpp */,
+				1FA513F81EB6B5EF00A8D52E /* Info.plist */,
+			);
+			path = IOPCIFamily;
+			sourceTree = "<group>";
+		};
+		1FA5140A1EB6B68100A8D52E /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1FA5140B1EB6B68100A8D52E /* pci */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		1FA5140B1EB6B68100A8D52E /* pci */ = {
+			isa = PBXGroup;
+			children = (
+				1FA5140C1EB6B68100A8D52E /* IOAGPDevice.h */,
+				1FA5140D1EB6B68100A8D52E /* IOPCIBridge.h */,
+				1FA5140E1EB6B68100A8D52E /* IOPCIConfigurator.h */,
+				1FA5140F1EB6B68100A8D52E /* IOPCIDevice.h */,
+				1FA514101EB6B68100A8D52E /* IOPCIPrivate.h */,
+			);
+			path = pci;
+			sourceTree = "<group>";
+		};
 		1FA934471B89790200BD68E3 /* References */ = {
 			isa = PBXGroup;
 			children = (
@@ -650,6 +727,7 @@
 				1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */,
 				1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */,
 				1FAA5DBF1DE91BF700DFA53F /* copy-IOATA-headers.sh */,
+				1FA514181EB6B73800A8D52E /* copy-IOPCI-headers.sh */,
 				1F31AFD71C8538A70091C31B /* copy-IOACPI-headers.sh */,
 				1F4DBE551DC58ADD00A55AF4 /* copy-IOStorage-headers.sh */,
 				1F4DBE541DC58A9300A55AF4 /* postprocess-IOStorage-headers.sh */,
@@ -717,6 +795,7 @@
 				1F56E8A41B8A9ECB0095848C /* AppleI386PlatformExpert */,
 				1FAA5D821DE91B4900DFA53F /* IOATAFamily */,
 				1FA9346D1B89798100BD68E3 /* IOACPIFamily */,
+				1FA513F31EB6B5EF00A8D52E /* IOPCIFamily */,
 				1F4DBDD01DC584FC00A55AF4 /* IOStorageFamily */,
 				1FA934761B8979AB00BD68E3 /* Xcode Supporting Files */,
 				1FA934471B89790200BD68E3 /* References */,
@@ -735,6 +814,7 @@
 				1F4DBDCF1DC584FC00A55AF4 /* IOStorageFamily.kext */,
 				1F994E861DC6D40500BB565B /* AppleFileSystemDriver.kext */,
 				1FAA5D811DE91B4900DFA53F /* IOATAFamily.kext */,
+				1FA513F21EB6B5EF00A8D52E /* IOPCIFamily.kext */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -787,6 +867,18 @@
 			files = (
 				1F994EA21DC6D52700BB565B /* uuid-namespace.h in Headers */,
 				1F994E9B1DC6D49800BB565B /* AppleFileSystemDriver.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA513EF1EB6B5EF00A8D52E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA514121EB6B68100A8D52E /* IOPCIBridge.h in Headers */,
+				1FA514131EB6B68100A8D52E /* IOPCIConfigurator.h in Headers */,
+				1FA514111EB6B68100A8D52E /* IOAGPDevice.h in Headers */,
+				1FA514141EB6B68100A8D52E /* IOPCIDevice.h in Headers */,
+				1FA514151EB6B68100A8D52E /* IOPCIPrivate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +1011,26 @@
 			productReference = 1F994E861DC6D40500BB565B /* AppleFileSystemDriver.kext */;
 			productType = "com.apple.product-type.kernel-extension";
 		};
+		1FA513F11EB6B5EF00A8D52E /* IOPCIFamily */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FA513F91EB6B5EF00A8D52E /* Build configuration list for PBXNativeTarget "IOPCIFamily" */;
+			buildPhases = (
+				1FA5141B1EB6B7ED00A8D52E /* Install Headers */,
+				1FA513ED1EB6B5EF00A8D52E /* Sources */,
+				1FA513EE1EB6B5EF00A8D52E /* Frameworks */,
+				1FA513EF1EB6B5EF00A8D52E /* Headers */,
+				1FA513F01EB6B5EF00A8D52E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FA5141A1EB6B7EA00A8D52E /* PBXTargetDependency */,
+			);
+			name = IOPCIFamily;
+			productName = IOPCIFamily;
+			productReference = 1FA513F21EB6B5EF00A8D52E /* IOPCIFamily.kext */;
+			productType = "com.apple.product-type.kernel-extension";
+		};
 		1FA9346B1B89798000BD68E3 /* IOACPIFamily */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FA934731B89798100BD68E3 /* Build configuration list for PBXNativeTarget "IOACPIFamily" */;
@@ -1027,6 +1139,11 @@
 						DevelopmentTeam = 3P242C9ES5;
 						ProvisioningStyle = Automatic;
 					};
+					1FA513F11EB6B5EF00A8D52E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 3P242C9ES5;
+						ProvisioningStyle = Automatic;
+					};
 					1FA9346B1B89798000BD68E3 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -1074,6 +1191,7 @@
 				1F4DBE1A1DC58A2400A55AF4 /* IOStorageFamily Headers */,
 				1F994E851DC6D40500BB565B /* AppleFileSystemDriver */,
 				1FAA5D801DE91B4900DFA53F /* IOATAFamily */,
+				1FA513F11EB6B5EF00A8D52E /* IOPCIFamily */,
 			);
 		};
 /* End PBXProject section */
@@ -1135,6 +1253,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F994E841DC6D40500BB565B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA513F01EB6B5EF00A8D52E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1203,6 +1328,21 @@
 			shellScript = ". \"${SRCROOT}/xcodesupport/copy-IOStorage-headers.sh\"";
 			showEnvVarsInLog = 0;
 		};
+		1FA5141B1EB6B7ED00A8D52E /* Install Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Install Headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". \"${SRCROOT}/xcodesupport/copy-IOPCI-headers.sh\"";
+			showEnvVarsInLog = 0;
+		};
 		1FAA5DC11DE91CAE00DFA53F /* Copy Headers */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1261,6 +1401,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F994E9E1DC6D4A900BB565B /* AppleFileSystemDriver.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FA513ED1EB6B5EF00A8D52E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FA514031EB6B64E00A8D52E /* IOPCIBridge.cpp in Sources */,
+				1FA514051EB6B64E00A8D52E /* IOPCIDevice.cpp in Sources */,
+				1FA514061EB6B64E00A8D52E /* IOPCIDeviceI386.cpp in Sources */,
+				1FA514091EB6B64E00A8D52E /* IOPCIRange.cpp in Sources */,
+				1FA514041EB6B64E00A8D52E /* IOPCIConfigurator.cpp in Sources */,
+				1FA514071EB6B64E00A8D52E /* IOPCIDeviceMappedIO.cpp in Sources */,
+				1FA514081EB6B64E00A8D52E /* IOPCIMessagedInterruptController.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1371,6 +1525,11 @@
 			isa = PBXTargetDependency;
 			name = mach_kernel;
 			targetProxy = 1FA513E91EB6B23100A8D52E /* PBXContainerItemProxy */;
+		};
+		1FA5141A1EB6B7EA00A8D52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1FA514191EB6B7EA00A8D52E /* PBXContainerItemProxy */;
 		};
 		1FA934791B897A2500BD68E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1818,6 +1977,89 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				WARNING_CFLAGS = "-Wno-inconsistent-missing-override";
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Release;
+		};
+		1FA513FA1EB6B5EF00A8D52E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AD1B897FBE00BD68E3 /* cross-build-debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3P242C9ES5;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOPCIFamily/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULE_NAME = com.sunburstapps.IOPCIFamily;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOPCIFamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = kext;
+			};
+			name = Debug;
+		};
+		1FA513FB1EB6B5EF00A8D52E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA934AE1B897FE000BD68E3 /* cross-build-release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0.0d1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3P242C9ES5;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = IOPCIFamily/Info.plist;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MODULE_NAME = com.sunburstapps.IOPCIFamily;
+				MODULE_VERSION = 1.0.0d1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.iokit.IOPCIFamily;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = Release;
@@ -2315,6 +2557,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		1FA513F91EB6B5EF00A8D52E /* Build configuration list for PBXNativeTarget "IOPCIFamily" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FA513FA1EB6B5EF00A8D52E /* Debug */,
+				1FA513FB1EB6B5EF00A8D52E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		1FA934731B89798100BD68E3 /* Build configuration list for PBXNativeTarget "IOACPIFamily" */ = {
 			isa = XCConfigurationList;
