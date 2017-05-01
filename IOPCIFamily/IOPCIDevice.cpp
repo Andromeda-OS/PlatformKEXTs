@@ -232,6 +232,7 @@ void IOPCIDevice::detach( IOService * provider )
 
     PMstop();
 
+#if 0
 	IOLockLock(reserved->lock);
 	while (false && reserved->pmActive)
 	{
@@ -239,6 +240,7 @@ void IOPCIDevice::detach( IOService * provider )
 		IOLockSleep(reserved->lock, &reserved->pmActive, THREAD_UNINT);
 	}
 	IOLockUnlock(reserved->lock);
+#endif
 
     super::detach(provider);
 
