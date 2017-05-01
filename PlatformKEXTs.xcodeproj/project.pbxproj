@@ -17,6 +17,7 @@
 				1F4DBE561DC58B5A00A55AF4 /* Postprocess User-Mode Headers */,
 			);
 			dependencies = (
+				1FA513EA1EB6B23100A8D52E /* PBXTargetDependency */,
 			);
 			name = "IOStorageFamily Headers";
 			productName = "IOStorageFamily Headers";
@@ -29,6 +30,7 @@
 				1FEF92A21C14B85300766465 /* Copy Files for Archive */,
 			);
 			dependencies = (
+				1FA513E81EB6B22800A8D52E /* PBXTargetDependency */,
 			);
 			name = "IOACPIFamily Headers";
 			productName = "IOACPIFamily Headers";
@@ -217,6 +219,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1F4DBE1A1DC58A2400A55AF4;
 			remoteInfo = "IOStorageFamily Headers";
+		};
+		1FA513E71EB6B22800A8D52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
+		};
+		1FA513E91EB6B23100A8D52E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FA934481B89790900BD68E3 /* Kernel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F42B3DD18592FE90023356E;
+			remoteInfo = mach_kernel;
 		};
 		1FA934501B89790900BD68E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -1345,6 +1361,16 @@
 			isa = PBXTargetDependency;
 			target = 1F4DBE1A1DC58A2400A55AF4 /* IOStorageFamily Headers */;
 			targetProxy = 1F994E9F1DC6D4F600BB565B /* PBXContainerItemProxy */;
+		};
+		1FA513E81EB6B22800A8D52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1FA513E71EB6B22800A8D52E /* PBXContainerItemProxy */;
+		};
+		1FA513EA1EB6B23100A8D52E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = mach_kernel;
+			targetProxy = 1FA513E91EB6B23100A8D52E /* PBXContainerItemProxy */;
 		};
 		1FA934791B897A2500BD68E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
